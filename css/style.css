@@ -1,0 +1,338 @@
+body{
+    font-family: 'Campton';
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/Campton-Light.otf') format('opentype');
+    font-weight: 400;
+ }
+ @font-face {
+   font-family: 'Campton';
+   src: url('../fonts/campton/Campton-Bold.otf') format('opentype');
+   font-weight: bold;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('../fonts/bebas/BEBAS-REGULAR.TTF') format('opentype');
+ }
+.campton{
+    font-family: 'Campton'; 
+}
+.bebas{
+    font-family: 'Bebas';
+}
+.navbar,.top-navbar  {
+    box-shadow: 0px 3px 5px #05061469;
+}
+.top-navbar{
+    z-index: 1;
+}
+.top-nav{
+    width: 35%;
+}
+.top-nav .btn {
+    font-size: 10px;
+    font-weight: 700;
+    min-width: 100px;
+    padding: 3px 9px 0px 9px;
+}
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 14px;
+    color: #ffca05 ;
+}
+.navbar-dark .navbar-nav .active>.nav-link{
+    color: #ffca05 ;
+}
+.offcanvas-header{ display:none; }
+.screen-overlay {
+  height: 100%;
+  z-index: 30;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity:0;
+  visibility:hidden;
+  background-color: rgba(34, 34, 34, 0.6);
+  transition:opacity .2s linear, visibility .1s, width 1s ease-in;
+}
+.screen-overlay.show {
+  transition:opacity .5s ease, width 0s;
+  opacity:1;
+  width:100%;
+  visibility:visible;
+}
+	
+@media all and (max-width:992px) { 
+
+ .offcanvas-header{ display:block; }
+ 
+ .mobile-offcanvas{
+    visibility: hidden;
+    transform:translateX(-100%);
+    border-radius:0; 
+    display:block;
+    position: fixed;
+    top: 0; left:0;
+    height: 100%;
+    z-index: 1200;
+    width:80%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+  }
+
+  .mobile-offcanvas.show{
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+
+
+.bg-primary{
+    background-color: #2b2873 !important;
+}
+.text-primary{
+    color: #2b2873 !important;
+}
+.text-secondary{
+    color: #ffca05 !important;
+}
+.f-12{
+    font-size: 12px;
+}
+
+.f-14{
+    font-size: 14px;
+}
+
+.btn{
+    border-radius: 0px;
+}
+.btn-primary{
+    background-color: #2b2873 !important;
+    border-color: #2b2873;
+    color: #ffca05;
+}
+
+.btn-secondary{
+    background-color: #ffca05;
+    border-color: #ffca05;
+    color: #2b2873;
+}
+.enquire-now-form {
+    right: 0px;
+    top: 12px;
+    z-index: 100;
+    width: 390px;
+    transition: all ease-out 300ms;
+}
+.toggle-btn {
+    top: 15%;
+    right: calc(100% + 42px);
+    line-height: 20px;
+    font-weight: 600;
+    background: url(../images/ic_form.png) no-repeat 24px center;
+    background-color: #ffca05;
+    padding: 10px 15px !important;
+    transform-origin: right top;
+    transform: rotate(-90deg);
+    transition: .5s;
+    z-index: 100;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.enquire-now-form.out {
+    right: -390px;
+}
+
+.banner-links {
+    bottom: 0px;
+    transform: translateY(50%);
+}
+.banner-links a {
+    color: black;
+    background-color: #ffca05;
+    display: inline-block;
+    padding: 8px 20px;
+    min-width: 206px;
+    font-size: 25px;
+}
+.section-padder{
+    padding: 80px 0px;
+}
+
+.about-graphics::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    background-color:#2b2873 ;
+    left: 0px;
+    top: 0px;
+}
+.about-bg-circle{
+    left: 20%;
+  
+    height:95%;
+}
+.f-18{
+    font-size: 18px;
+}
+.f-20{
+    font-size: 20px;
+}
+
+.bg-danger{
+    background-color: red !important;
+}
+.text-danger{
+    color: red;
+}
+
+.contact-btn .btn{
+    min-width: 150px;
+}
+
+.admission-banner {
+    transform: translateY(-75px);
+}
+
+.object-fit-cover{
+    object-fit: cover;
+}
+
+.testimonial-section{
+    min-height: 100vh;
+}
+.testimonial-thumb img {
+    transform: scale(.9);
+    position: relative;
+    z-index: 1;
+ 
+}
+
+.testimonial-thumb {
+    position: relative;
+    padding-left: 48px;
+    padding-right: 10px;
+}
+.testimonial-thumb::after {
+    content: "";
+    height: 100%;
+    width: 54%;
+    background-color: #ffca05;
+    right: 0px;
+    top: 0px;
+    display: block;
+    position: absolute;
+}
+.testimonial-thumb::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/abstract_white_for-student.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.testimonial-quote{
+    padding-bottom: 78px;
+    padding-top: 78px;
+}
+.testimonial-quote::before, .testimonial-quote::after {
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-image: url(../images/icon/quote.svg);
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 10;
+    
+}
+.testimonial-quote::before{
+    top: 0px;
+    transform: rotate(180deg);
+}
+.testimonial-quote::after{
+    bottom: 0;
+    right: 0px;
+}
+.textimonial-items {
+    min-height: 440px;
+    display: flex !important;
+    align-items: center;
+}
+@media(min-width:992px){
+    .slick-control-col{
+        order: -1;
+    }
+}
+.slick-prev, .slick-next {
+    color: #0d1f50 !important;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #0d1f50 !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 17px;
+}
+.slick-prev::before, .slick-next::before{
+    display: none;
+}
+.arrow-light.slick-prev,.arrow-light.slick-next{
+    color: white !important;
+    border: 2px solid white !important;
+}
+
+footer{
+    background-color: #d6d6d6;
+    border-top: 5px solid #ffca05;
+}
+
+.footer-links li a {
+    position: relative;
+    color: #2b2873;
+    padding-left: 24px;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.footer-links li a::before {
+    content: "";
+    height: 2px;
+    width: 13px;
+    background-color: #2b2873;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 9px;
+}
+
+.discover-thumb-item .caption {
+    z-index: 1;
+    bottom: 5px;
+    left: 15px;
+}
+
+.discover-thumb-item .caption::before {
+    content: "";
+    height: 2px;
+    width: 48px;
+    background-color: white;
+    display: block;
+    margin-left: 3px;
+    margin-bottom: 2px;
+}
