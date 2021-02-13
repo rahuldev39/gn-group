@@ -16,6 +16,13 @@ body{
     font-family: 'Bebas';
     src: url('../fonts/bebas/BEBAS-REGULAR.TTF') format('opentype');
  }
+.page-header{
+    z-index: 100;
+}
+.banner-img{
+    top:0;
+    left: 0px;
+}
 .campton{
     font-family: 'Campton'; 
 }
@@ -123,7 +130,7 @@ body{
 }
 .enquire-now-form {
     right: 0px;
-    top: 12px;
+    top: 150px;
     z-index: 100;
     width: 390px;
     transition: all ease-out 300ms;
@@ -152,7 +159,7 @@ body{
 
 .banner-links {
     bottom: 0px;
-    transform: translateY(50%);
+    
 }
 .banner-links a {
     color: black;
@@ -161,6 +168,7 @@ body{
     padding: 8px 20px;
     min-width: 206px;
     font-size: 25px;
+    width: 100%;
 }
 .section-padder{
     padding: 80px 0px;
@@ -206,9 +214,9 @@ body{
     object-fit: cover;
 }
 
-.testimonial-section{
+/* .testimonial-section{
     min-height: 100vh;
-}
+} */
 .testimonial-thumb img {
     transform: scale(.9);
     position: relative;
