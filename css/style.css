@@ -1,6 +1,6 @@
-body{
+body {
     font-family: 'Campton';
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 @font-face {
     font-family: 'Campton';
@@ -16,6 +16,9 @@ body{
     font-family: 'Bebas';
     src: url('../fonts/bebas/BEBAS-REGULAR.TTF') format('opentype');
  }
+ a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
+    background-color: #ffca05!important;
+}
 .page-header{
     z-index: 100;
 }
@@ -74,20 +77,21 @@ body{
 
  .offcanvas-header{ display:block; }
  
- .mobile-offcanvas{
+ .mobile-offcanvas {
     visibility: hidden;
-    transform:translateX(-100%);
-    border-radius:0; 
-    display:block;
+    transform: translateX(-100%);
+    border-radius: 0;
+    display: block;
     position: fixed;
-    top: 0; left:0;
+    top: 0;
+    left: 0;
     height: 100%;
     z-index: 1200;
-    width:80%;
-    overflow-y: scroll;
+    width: 300px;
+    overflow-y: auto;
     overflow-x: hidden;
     transition: visibility .2s ease-in-out, transform .2s ease-in-out;
-  }
+}
 
   .mobile-offcanvas.show{
     visibility: visible;
@@ -207,7 +211,7 @@ body{
 }
 
 .admission-banner {
-    transform: translateY(-75px);
+    
 }
 
 .object-fit-cover{
@@ -343,4 +347,32 @@ footer{
     display: block;
     margin-left: 3px;
     margin-bottom: 2px;
+}
+
+.light-abstract{
+   background: url(../images/black-abstract_right.png)  no-repeat,
+                url(../images/black-abstract_left.png)  no-repeat;
+   background-size: 20%,14%;
+   background-position:right top, left bottom;
+}
+
+.dark-abstract{
+    background: url(../images/white_abstract_right.png)   no-repeat, 
+                url(../images/white_abstract_left.png)  no-repeat;
+    background-size: 18%, 15%;
+    background-position:right top 150px,left bottom;
+
+}
+
+.discover-thumb-item img{
+    transition: all ease-out 500ms;
+}
+.discover-thumb-item:hover img {
+    transform: scale(1.1);
+}
+.popular-course-item{
+    transition: all ease-out 500ms;
+}
+.popular-course-item:hover{
+    transform: scale(1.04);
 }
