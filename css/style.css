@@ -136,8 +136,11 @@ body {
     right: 0px;
     top: 150px;
     z-index: 100;
-    width: 390px;
+    width: 330px;
     transition: all ease-out 300ms;
+}
+.form-control{
+
 }
 .toggle-btn {
     top: 15%;
@@ -156,9 +159,18 @@ body {
     font-size: 18px;
     font-weight: 400;
 }
-
+.form-control {
+    font-size: 14px;
+    border-radius: 0px;
+    border: 1px solid #2b287352;
+}
+.form-control:focus {
+   
+    border-color: #2b28738f;
+    box-shadow: 0 0 0 0.2rem rgb(43 40 115 / 15%);
+}
 .enquire-now-form.out {
-    right: -390px;
+    right: -330px;
 }
 
 .banner-links {
