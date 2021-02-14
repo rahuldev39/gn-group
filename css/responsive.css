@@ -40,6 +40,23 @@
     }
 }
 @media(max-width:768px){
+    .slick-next {
+        right: 0px;
+    }
+    .slick-prev {
+        left: 0px;
+    }
+    .slick-control .btn img {
+        width: 27px;
+    }
+    .slick-prev, .slick-next {
+        height: 28px;
+        width: 28px;
+        font-size: 12px;
+    }
+    .testimonial-thumb img {
+        width: 75px;
+    }
     .discover-thumb-item img {
         height: 300px;
     }

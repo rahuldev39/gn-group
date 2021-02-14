@@ -86,7 +86,7 @@ $('.testimonial-slider').slick({
     vertical: true,
     verticalSwiping: true,
     autoplay:true,
-        
+	infinite: false,
     });
 
     // Custom carousel nav
@@ -98,6 +98,8 @@ $('.testimonial-slider').slick({
 		e.preventDefault(); 
 		$('.slick-slider').slick('slickNext');
 	} );
+
+
 
 
  
