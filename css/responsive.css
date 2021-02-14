@@ -21,6 +21,7 @@
     .navbar-brand img{
         width: 180px;
     }
+    
     .enquire-now-form {
         top: 94px;
     }
@@ -82,5 +83,29 @@
 @media(max-width:576px){
     .about-img img {
         width: 238px;
+    }
+    .admission-banner span {
+        font-size: 1.3rem;
+    }
+    .admission-banner .icon img{
+        width: 30px;
+    }
+    .testimonial-thumb{
+        display: none;
+    }
+   
+    
+    .banner-links a {
+        font-size: 18px;
+    }
+    .testimonial-content > div {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+@media(max-width:468px){
+    
+    .about-img img {
+        width: 190px;
     }
 }

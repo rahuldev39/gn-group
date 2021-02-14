@@ -136,12 +136,10 @@ body {
     right: 0px;
     top: 150px;
     z-index: 100;
-    width: 330px;
+    width: 280px;
     transition: all ease-out 300ms;
 }
-.form-control{
 
-}
 .toggle-btn {
     top: 15%;
     right: calc(100% + 42px);
@@ -170,7 +168,7 @@ body {
     box-shadow: 0 0 0 0.2rem rgb(43 40 115 / 15%);
 }
 .enquire-now-form.out {
-    right: -330px;
+    right: -280px;
 }
 
 .banner-links {
@@ -182,7 +180,6 @@ body {
     background-color: #ffca05;
     display: inline-block;
     padding: 8px 20px;
-    min-width: 206px;
     font-size: 25px;
     width: 100%;
 }
@@ -190,19 +187,19 @@ body {
     padding: 80px 0px;
 }
 
-.about-graphics::before{
+.about-graphics::before {
     content: "";
     position: absolute;
     height: 100%;
-    width: 45%;
-    background-color:#2b2873 ;
+    width: 75%;
+    background-color: #2b2873;
     left: 0px;
     top: 0px;
 }
-.about-bg-circle{
-    left: 20%;
-  
-    height:95%;
+.about-bg-circle {
+    left: 37%;
+    height: 95%;
+    top: 0;
 }
 .f-18{
     font-size: 18px;
@@ -220,10 +217,6 @@ body {
 
 .contact-btn .btn{
     min-width: 150px;
-}
-
-.admission-banner {
-    
 }
 
 .object-fit-cover{
