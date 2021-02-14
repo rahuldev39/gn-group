@@ -85,7 +85,7 @@ $('.testimonial-slider').slick({
     dots: false,
     vertical: true,
     verticalSwiping: true,
-    
+    autoplay:true,
         
     });
 
