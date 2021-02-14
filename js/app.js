@@ -51,7 +51,7 @@ if($('#fullpage').length > 0){
 	});
 }
 
-
+gsap.to('.about-bg-circle',{rotation:360, duration: 100, repeat:-1})
 
 $("[data-trigger]").on("click", function(e){
     e.preventDefault();
