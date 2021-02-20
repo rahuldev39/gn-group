@@ -7,7 +7,7 @@ if($('#fullpage').length > 0){
 		autoScrolling: true,
 		fitToSection: true,
 		fitToSectionDelay: 1000,
-		scrollBar: false,
+		scrollBar: true,
 		easing: 'easeInOutCubic',
 		easingcss3: 'ease',
 		loopBottom: false,
@@ -36,7 +36,7 @@ if($('#fullpage').length > 0){
 		//Design
 		controlArrows: false,
 		verticalCentered: true,
-		paddingTop: '150px',
+		paddingTop: '115px',
 		//paddingBottom: '10px',
 		fixedElements: '#header',
 		responsiveWidth: 1024,
