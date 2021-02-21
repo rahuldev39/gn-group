@@ -414,3 +414,107 @@ footer{
     font-size: 14px;
     font-weight: 600;
 }
+.page-internal{
+    padding-top: 105px;
+}
+.page-heading{
+    left: 0;
+    top: 0px;
+}
+.page-heading h1 {
+    font-size: 4.5rem;
+}
+.section-heading h1{
+    font-size: 3.5rem;
+    line-height: 1;
+}
+.section-heading h1::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: #ffca05;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+.boxed-shadow::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 30px) ;
+    height: calc(100% - 30px);
+    background-color: #211e5e;
+    right: 0px;
+    top: 0px;
+}
+.boxed-shadow{
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.mission-section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    right: 0px;
+    top: 0px;
+    background-color:#ffca05 ;
+}
+.accordion.style1 .icon{
+    padding-top: 8px;
+    padding-right: 8px;
+}
+.accordion.style1 .icon > div{
+    background-color:#ffca05 ;
+    
+}
+.accordion.style1 .icon::before{
+    content: "";
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background-color: #211e5e;
+    right: 0px;
+    top: 0px;
+}
+.accordion-header-title::before, .accordion-header-title::after{
+    content: "";
+    position: absolute;
+    height:calc(100% - 10px) ;
+    width: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-left: 0px;
+}
+.accordion-header-title::before{
+    border-color: #211e5e;
+    top: 0px;
+    border-bottom: 0px;
+    left: 0px;
+}
+.accordion-header-title::after{
+    border-color: #ffca05;
+    bottom: 0px;
+    border-top: 0px;
+    left: -8px;
+}
+.boxed-bullet li {
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 5px;
+}
+.boxed-bullet li::before {
+    height: 8px;
+    width: 8px;
+    background-color: #ffca05;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+.accordion-item button{
+    outline: none;
+}
+
+.accordion-item .icon img {
+    width: 25px;
+}

@@ -18,6 +18,20 @@
     }
 }
 @media(max-width:992px){
+    .page-internal {
+        padding-top: 60px;
+    }
+        
+    .section-heading h1 {
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+    .mission-section::before{
+        display: none;
+    }
+    .img-right-lg{
+        order: -1;
+    }
     .navbar-brand img{
         width: 180px;
     }
