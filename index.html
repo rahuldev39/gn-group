@@ -23,7 +23,7 @@
 <body>
   <header class="position-fixed w-100 page-header">
     <!-- Navigation -->
-  <div class="top-navbar d-flex align-items-center   py-lg-2 position-relative bg-white">
+  <div class="top-navbar d-flex align-items-center   py-lg-2 position-relative bg-secondary">
     
     <div class="mx-lg-auto px-lg-5 ml-3 d-block d-lg-none">
       <a class="navbar-brand" href="#">
@@ -37,13 +37,13 @@
           <a href="#" class="btn btn-primary btn-sm mx-2">
             Click for E-Brochure
           </a>
-          <a href="#" class="btn btn-secondary btn-sm mx-2">
+          <a href="#" class="btn btn-primary btn-sm mx-2">
             E-Brochure Download
           </a>
-          <a href="#" class="btn btn-danger btn-sm mx-2">
+          <a href="#" class="btn btn-light btn-sm mx-2">
             Apply Now
           </a>
-          <a href="#" class="btn btn-secondary btn-sm mx-2">
+          <a href="#" class="btn btn-primary btn-sm mx-2">
             Enquire Now
           </a>
         </div>
@@ -73,11 +73,11 @@
       <img src="./images/icon/menu.svg" width="30" alt="">
     </button>
   </div>
-  <nav class="navbar navbar-expand-lg mobile-offcanvas navbar-dark bg-primary static-top py-0" id="navbar_main">
-    
+
+  <nav class="navbar navbar-expand-lg mobile-offcanvas navbar-dark  static-top py-0" id="navbar_main">
     <div class="container-fluid flex-lg-row flex-column align-items-lg-center align-items-stretch">
       <a class="navbar-brand" href="#">
-        <img src="./images/gn_white_logo.svg" width="180" alt="">
+        <img src="./images/gn_logo.svg" width="180" alt="">
       </a>
       <div class="offcanvas-header d-lg-none d-flex align-items-center mb-4">  
         <h5 class="py-2 text-white mb-0">Main Menu</h5>
@@ -124,10 +124,21 @@
   
   <!-- Page Content -->
     <main id="fullpage">
-      <section class="section hero-section position-relative overflow-hidden">
-        <img src="./images/banner.png" class="banner-img img-fluid position-absolute h-100 w-100 object-fit-cover" alt="">
+      <section class="section hero-section position-relative  overflow-hidden">
+        <div class="hero-slider   mb-0">
+          <div class="hero-slider-item">
+            <img src="./images/banner.png" class="banner-img  img-fluid  w-100 object-fit-cover" alt="">
+          </div>
+          <div class="hero-slider-item">
+            <img src="./images/banner.png" class="banner-img  img-fluid w-100 object-fit-cover" alt="">
+          </div>
+          <div class="hero-slider-item">
+            <img src="./images/banner.png" class="banner-img  img-fluid   w-100 object-fit-cover" alt="">
+          </div>
+        </div>
+        
   
-        <div class="enquire-now-form bg-white p-4  shadow  position-absolute out">
+        <!-- <div class="enquire-now-form bg-white p-4  shadow  position-absolute out">
           <button class="btn toggle-btn p-0 position-absolute bebas">
             Enquire Now
           </button>
@@ -156,16 +167,7 @@
            <div class="text-right">
              <button class="btn btn-primary">SUBMIT</button>
            </div>
-       </div>
-  
-       <div class="banner-links position-absolute w-100 d-flex align-items-center">
-        <div class="flex-fill text-center">
-          <a class="text-uppercase bebas shadow" href="">Circular & Update</a>
-        </div>
-        <div class="flex-fill text-center">
-          <a class="text-uppercase bebas shadow" href="">Events</a>
-        </div>
-       </div>
+       </div> -->
       </section>
   
       <section class="section about-section light-abstract">
@@ -200,24 +202,127 @@
         </div>
         
       </section>
+
+      <section class="section bg-primary  dark-abstract position-relative">
+          <div class="news-slider bg-secondary py-2 d-flex align-items-center position-absolute w-100">
+            <marquee onmouseover="this.stop();" onmouseout="this.start();" behavior="" direction="">
+              <span>A Unit Of Vinayak Education Society – Approved By AICTE & Affiliated to Dr.APJ Abdul Kalam Technical University, Lucknow (Formerly UPTU) , Chaudhry</span>
+              <span>A Unit Of Vinayak Education Society – Approved By AICTE & Affiliated to Dr.APJ Abdul Kalam Technical University, Lucknow (Formerly UPTU) , Chaudhry</span>
+            </marquee>
+            
+          </div>
   
-      <section class="section discover-more-section bg-primary">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class="col-xl-5 col-lg-6 mb-5 mb-lg-0">
+                <div class="events-block bg-white p-4 h-100">
+                  <div class="title d-flex align-items-center justify-content-center">
+                    <h5 class="bg-secondary  shadow">Circular & Update</h5>
+                  </div>
+                  <div>
+                    <ul class="events-list list-unstyled">
+                      <li class="circular-item bg-secondary px-3 py-2">
+                        <span>Lorem ipsum dolor sit amet, consec</span>
+                      </li>
+                      <li class="circular-item bg-secondary px-3 py-2">
+                        <span>Lorem ipsum dolor sit amet, consec</span>
+                      </li>
+                      <li class="circular-item bg-secondary px-3 py-2">
+                        <span>Lorem ipsum dolor sit amet, consec</span>
+                      </li>
+                      <li class="circular-item bg-secondary px-3 py-2">
+                        <span>Lorem ipsum dolor sit amet, consec</span>
+                      </li>
+                      <li class="circular-item bg-secondary px-3 py-2">
+                        <span>Lorem ipsum dolor sit amet, consec</span>
+                      </li>
+                     
+                     
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-6">
+                <div class="events-block bg-secondary p-4 h-100">
+                  <div class="title d-flex align-items-center justify-content-center">
+                    <h5 class="bg-white shadow">Events</h5>
+                  </div>
+                  <div>
+                    <ul class="events-list list-unstyled text-primary">
+                      <li>
+                        <div class="d-flex">
+                          <div class="event-day bg-white">
+                            <span class="date">20</span>
+                            <span class="month">FEB</span>
+                          </div>
+                          <div class="event-info">
+                            <h4>Lorem ipsum dolor sit</h4>
+                            <span class="f-14">Lorem ipsum dolor sit amet, consec</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="event-day bg-white">
+                            <span class="date">22</span>
+                            <span class="month">FEB</span>
+                          </div>
+                          <div class="event-info">
+                            <h4>Lorem ipsum dolor sit</h4>
+                            <span class="f-14">Lorem ipsum dolor sit amet, consec</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="event-day bg-white">
+                            <span class="date">25</span>
+                            <span class="month">FEB</span>
+                          </div>
+                          <div class="event-info">
+                            <h4>Lorem ipsum dolor sit</h4>
+                            <span class="f-14">Lorem ipsum dolor sit amet, consec</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="d-flex">
+                          <div class="event-day bg-white">
+                            <span class="date">28</span>
+                            <span class="month">FEB</span>
+                          </div>
+                          <div class="event-info">
+                            <h4>Lorem ipsum dolor sit</h4>
+                            <span class="f-14">Lorem ipsum dolor sit amet, consec</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+   
+      </section>
+  
+      <section class="section discover-more-section">
         <div class="container pb-lg-3 pb-5">
           <div class="row">
-            <div class="col-md-6">
-              <h1 class="section-title text-secondary bebas mb-2">DISCOVER MORE</h1>
-              <p class="text-white f-20">A glance at the various specifics</p>
+            <div class="col-md-6 text-primary">
+              <h1 class="section-title  bebas mb-2">DISCOVER MORE</h1>
+              <p class=" f-20">A glance at the various specifics</p>
             </div>
             <div class="col-md-6">
               <div class="admission-banner text-right">
-                <div class="d-inline-flex align-items-center bg-danger px-4 py-2">
+                <div class="d-inline-flex align-items-center bg-secondary px-4 py-2">
                   <div class="icon mr-3">
                     <img src="./images/icon/students-cap.svg" width="40" alt="">
                   </div>
-                  <span class="bebas text-white h3 mb-0">FOR THE ADMISSION 2021</span>
+                  <span class="bebas text-primary h3 mb-0">FOR THE ADMISSION 2021</span>
                 </div>
                 <div class="contact-btn mt-n2">
-                  <a href="#" class="btn btn-light text-danger bebas f-20 py-1">Contact Now</a>
+                  <a href="#" class="btn btn-light text-primary bebas f-20 py-1 shadow">Contact Now</a>
                 </div>
                 
               </div>
@@ -278,16 +383,17 @@
             <p class="text-primary f-20">Top institutions we have created</p>
           </div>
           <div class="px-md-5">
-            <div class="row">
-              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+            <div class="institute-slider px-4">
+              <div class="institute-slider-item mb-4 mb-lg-0 px-2">
                 <div class="popular-course-item text-center shadow h-100 d-flex flex-column bg-white">
                   <div class="course-item-body p-4 flex-fill">
-                    <h5 class="text-primary font-weight-bold mt-2">Greater Noida College of
-                      Technology (GNCT)</h5>
-                      <p class="text-primary f-18">U.G. 4 Years Programme</p>
+                    <h5 class="text-primary font-weight-bold mt-2">Greater Noida Institute of
+                      Technology (IPU Campus)</h5>
+                      <p class="text-primary f-18">UG 4 Years Programme</p>
                       <ul class="list-unstyled mb-0">
-                        <li class="f-12">B.Tech. (Computer Science & Engg.)</li>
-                        <li class="f-12"> B.Tech. (Electronics & Communications Engg)</li>
+                        <li class="f-12">Approved by AICTE & Affiliated to G.G.S.I.P.
+                          University, New Delhi B.Tech. - CSE, IT, ECE, ME</li>
+                        
                       </ul>
                       
                   </div>
@@ -295,52 +401,101 @@
                 </div>
               </div>
     
-              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="institute-slider-item mb-4 mb-lg-0 px-2">
                 <div class="popular-course-item text-center shadow h-100 d-flex flex-column bg-white">
                   <div class="course-item-body p-4 flex-fill">
-                    <h5 class="text-primary font-weight-bold mt-2">Greater Noida Polytechnic
-                      College (GNPC)</h5>
-                      <p class="text-primary f-18">U.G. 3 Years Programme</p>
+                    <h5 class="text-primary font-weight-bold mt-2">Greater Noida College of
+                      Technology, Greater Noida.</h5>
+                      <p class="text-primary f-18">UG 4 Years Programme</p>
                       <ul class="list-unstyled mb-0">
-                        <li class="f-12">Electrical Engineering</li>
-                        <li class="f-12">CSE Engineering</li>
-                        <li class="f-12">Mechanical Engineering(Production)</li>
-                        <li class="f-12">Mechanical Engineering(Automobile)</li>
+                        <li class="f-12">Approved by AICTE, New Delhi
+                          & Affiliated to Dr. A.P.J. Abdul Kalam
+                          Technical University, Lucknow B.Tech. - CSE</li>
                       </ul>
                   </div>
                  <button class="btn btn-primary btn-block text-uppercase font-weight-bold py-3">APPLY NOW</button>
                 </div>
               </div>
     
-              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="institute-slider-item mb-4 mb-lg-0 px-2">
                 <div class="popular-course-item text-center shadow h-100 d-flex flex-column bg-white">
                   <div class="course-item-body p-4 flex-fill">
-                    <h5 class="text-primary font-weight-bold mt-2">Greater Noida Institute of
-                      Management (GNIM)</h5>
-                      <p class="text-primary f-18">U.G. 3 Years Programme</p>
+                    <h5 class="text-primary font-weight-bold mt-2">GNIT College of Pharmacy,
+                      Greater Noida</h5>
+                     
                       <ul class="list-unstyled mb-0">
-                        <li class="f-12">BBA / B.Sc / B.Com</li>
-                        <li class="f-12">BCA</li>
+                        <li class="f-12">Approved by PCI, New Delhi & Affiliated to
+                          Dr. A.P.J. Abdul Kalam Technical University
+                          & BTE UP, Lucknow. B.Pharm. , D.Pharm.</li>
                       </ul>
                   </div>
                  <button class="btn btn-secondary btn-block text-uppercase font-weight-bold py-3">APPLY NOW</button>
                 </div>
               </div>
     
-              <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+              <div class="institute-slider-item mb-4 mb-lg-0 px-2">
                 <div class="popular-course-item text-center shadow h-100 d-flex flex-column bg-white">
                   <div class="course-item-body p-4 flex-fill">
-                    <h5 class="text-primary font-weight-bold mt-2">Greater Noida college
-                      of Law (GNCL)</h5>
-                      <p class="text-primary f-18">U.G. 3 Years and 5 Years
-                        Programme</p>
+                    <h5 class="text-primary font-weight-bold mt-2">GNIT College of
+                      Management, Greater Noida</h5>
+                      <p class="text-primary f-18">PG 2 Years Programme</p>
                       <ul class="list-unstyled mb-0">
-                        <li class="f-12">LL.B. 3 years</li>
-                        <li class="f-12">B.Com LL.B. 5 years</li>
-                        <li></li>
+                        <li class="f-12">Approved by AICTE, New Delhi &
+                          Affiliated to Dr. A.P.J. Abdul Kalam
+                          Technical University, Lucknow MBA</li>
                       </ul>
                   </div>
                  <button class="btn btn-primary btn-block text-uppercase font-weight-bold py-3">APPLY NOW</button>
+                </div>
+              </div>
+
+              <div class="institute-slider-item mb-4 mb-lg-0 px-2">
+                <div class="popular-course-item text-center shadow h-100 d-flex flex-column bg-white">
+                  <div class="course-item-body p-4 flex-fill">
+                    <h5 class="text-primary font-weight-bold mt-2">Greater Noida Polytechnic
+                      College, Greater Noida.</h5>
+                     
+                      <ul class="list-unstyled mb-0">
+                        <li class="f-12">Approved by AICTE, New Delhi & Affiliated
+                          to Board of Technical Education,
+                          Lucknow, Uttar Pradesh
+                          Diploma (CSE, ME-Auto, EE)</li>
+                      </ul>
+                  </div>
+                 <button class="btn btn-secondary btn-block text-uppercase font-weight-bold py-3">APPLY NOW</button>
+                </div>
+              </div>
+
+              <div class="institute-slider-item mb-4 mb-lg-0 px-2">
+                <div class="popular-course-item text-center shadow h-100 d-flex flex-column bg-white">
+                  <div class="course-item-body p-4 flex-fill">
+                    <h5 class="text-primary font-weight-bold mt-2">Greater Noida Institute of
+                      Management (GNIM),
+                      Greater Noida</h5>
+                     
+                      <ul class="list-unstyled mb-0">
+                        <li class="f-12">Affiliated to Chaudhary Charan
+                          Singh University (CCSU), Meerut
+                          BBA, BCA, B.Com</li>
+                      </ul>
+                  </div>
+                 <button class="btn btn-primary btn-block text-uppercase font-weight-bold py-3">APPLY NOW</button>
+                </div>
+              </div>
+
+              <div class="institute-slider-item mb-4 mb-lg-0 px-2">
+                <div class="popular-course-item text-center shadow h-100 d-flex flex-column bg-white">
+                  <div class="course-item-body p-4 flex-fill">
+                    <h5 class="text-primary font-weight-bold mt-2">Greater Noida College of
+                      Law (GNCL), Greater Noida</h5>
+                     
+                      <ul class="list-unstyled mb-0">
+                        <li class="f-12">Approved by Bar Council of India (BCI),
+                          New Delhi & Affiliated to Chaudhary Charan
+                          Singh University (CCSU), Meerut</li>
+                      </ul>
+                  </div>
+                 <button class="btn btn-secondary btn-block text-uppercase font-weight-bold py-3">APPLY NOW</button>
                 </div>
               </div>
               
@@ -429,15 +584,94 @@
               
             </div>
           </div>
-          
-          
         </div>
+      </section>
+
+      <section class="section py-0">
+
+        <div class="row no-gutters h-100">
+          <div class="campus-drive col-xl-6 bg-gray h-100 text-center d-flex align-items-center justify-content-center">
+            <div>
+              <div class="icon mb-2">
+                <img src="./images/icon/Students_placed.svg" width="65" alt="">
+              </div>
+              <h3 class="bebas section-title text-primary mb-4 font-weight-bold">STUDENTS PLACED</h3>
   
-        
+              <div class="student-placed-slider">
+                <div class="student-placed-item">
+                  <img src="./images/student-placed.png" class="img-fluid" alt="">
+                </div>
+                <div class="student-placed-item">
+                  <img src="./images/student-placed.png" class="img-fluid" alt="">
+                </div>
+                <div class="student-placed-item">
+                  <img src="./images/student-placed.png" class="img-fluid" alt="">
+                </div>
+                <div class="student-placed-item">
+                  <img src="./images/student-placed.png" class="img-fluid" alt="">
+                </div>
+              </div>
+
+            </div>
+           
+          </div>
+          <div class="campus-drive col-xl-6 bg-secondary h-100 text-center d-flex align-items-center justify-content-center">
+            <div class="">
+              <div class="icon mb-2">
+                <img src="./images/icon/campus_drive.svg"  width="65" alt="">
+              </div>
+              <h3 class="bebas section-title text-primary mb-4 font-weight-bold">Campus Drive</h3>
+              <div class="campus-drive-slider ">
+                <div class="campus-drive-item bg-gray shadow-sm text-center p-4">
+                  <div class="company mb-5 mt-2" >
+                    <img src="./images/company/logos-18.png" class="mx-auto" width="190" alt="">
+                  </div>
+                  <h3 class="font-weight-bold text-primary mb-3">IS HIRING</h3>
   
+                  <div class="bg-white d-flex align-items-center justify-content-center text-primary">
+                    <div class="icon mr-3 px-3 py-2">
+                      <img src="./images/icon/calender.svg" width="20" alt="">
+                    </div>
+                    <span>1 MAR 2021</span>
+                  </div>
+  
+                  <div class="bg-white d-flex align-items-center justify-content-center text-primary mt-2">
+                    <div class="icon mr-3 px-3 py-2">
+                      <img src="./images/icon/clock.svg" width="20" alt="">
+                    </div>
+                    <span>9:00 AM</span>
+                  </div>
+                </div>
+  
+                <div class="campus-drive-item bg-gray shadow-sm text-center p-4">
+                  <div class="company mb-5 mt-2" >
+                    <img src="./images/company/logos-18.png" class="mx-auto" width="190" alt="">
+                  </div>
+                  <h3 class="font-weight-bold text-primary mb-3">IS HIRING</h3>
+  
+                  <div class="bg-white d-flex align-items-center justify-content-center text-primary">
+                    <div class="icon mr-3 px-3 py-2">
+                      <img src="./images/icon/calender.svg" width="20" alt="">
+                    </div>
+                    <span>1 MAR 2021</span>
+                  </div>
+  
+                  <div class="bg-white d-flex align-items-center justify-content-center text-primary mt-2">
+                    <div class="icon mr-3 px-3 py-2">
+                      <img src="./images/icon/clock.svg" width="20" alt="">
+                    </div>
+                    <span>9:00 AM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
       </section>
   
-      <section class="section gallery-section ">
+      <section class="section gallery-section light-abstract">
         <div class="container">
           <h1 class="section-title text-primary bebas mb-lg-4 mb-5">Gallery</h1>
   
@@ -499,33 +733,56 @@
   
       <section class="section hiring-section section-padder bg-primary dark-abstract">
   
-        <div class="container">
+        <div class="">
           <h1 class="section-title text-white bebas mb-5 text-center">COMPANIES HIRING</h1>
   
-          <div class="companies-slider px-4">
-            <div class="company-item px-2">
-              <img src="./images/company/clients1.png" class="img-fluid" alt="">
+          <div class="companies-slider">
+            <div class="company-item p-3">
+              <img src="./images/company/logos-05.png" class="img-fluid" alt="">
             </div>
-            <div class="company-item px-2">
-              <img src="./images/company/clients2.png" class="img-fluid" alt="">
+            <div class="company-item p-3">
+              <img src="./images/company/logos-06.png" class="img-fluid" alt="">
             </div>
-            <div class="company-item px-2">
-              <img src="./images/company/clients3.png" class="img-fluid" alt="">
+            <div class="company-item p-3">
+              <img src="./images/company/logos-07.png" class="img-fluid" alt="">
             </div>
-            <div class="company-item px-2">
-              <img src="./images/company/clients4.png" class="img-fluid" alt="">
+            <div class="company-item p-3">
+              <img src="./images/company/logos-08.png" class="img-fluid" alt="">
             </div>
-            <div class="company-item px-2">
-              <img src="./images/company/clients5.png" class="img-fluid" alt="">
+            <div class="company-item p-3">
+              <img src="./images/company/logos-09.png" class="img-fluid" alt="">
             </div>
-            <div class="company-item px-2">
-              <img src="./images/company/clients1.png" class="img-fluid" alt="">
+            <div class="company-item p-3">
+              <img src="./images/company/logos-10.png" class="img-fluid" alt="">
             </div>
-            <div class="company-item px-2">
-              <img src="./images/company/clients2.png" class="img-fluid" alt="">
+            <div class="company-item p-3">
+              <img src="./images/company/logos-11.png" class="img-fluid" alt="">
             </div>
-            <div class="company-item px-2">
-              <img src="./images/company/clients3.png" class="img-fluid" alt="">
+            <div class="company-item p-3">
+              <img src="./images/company/logos-12.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="company-item p-3">
+              <img src="./images/company/logos-13.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="company-item p-3">
+              <img src="./images/company/logos-14.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="company-item p-3">
+              <img src="./images/company/logos-15.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="company-item p-3">
+              <img src="./images/company/logos-16.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="company-item p-3">
+              <img src="./images/company/logos-17.png" class="img-fluid" alt="">
+            </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-18.png" class="img-fluid" alt="">
             </div>
             
           </div>
@@ -684,6 +941,7 @@
   <script src="vendor/slick/slick.min.js"></script>
   <script src="vendor/fullpage/fullpage.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
   <script src="js/app.js"></script>
 
 </body>

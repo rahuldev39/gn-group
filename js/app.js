@@ -51,7 +51,16 @@ if($('#fullpage').length > 0){
 	});
 }
 
-gsap.to('.about-bg-circle',{rotation:360, duration: 100, repeat:-1})
+gsap.to('.about-bg-circle',{rotation:360, duration: 100, repeat:-1});
+
+gsap.registerPlugin(ScrollTrigger);
+
+ScrollTrigger.create({
+	trigger:'main',
+	start:'10% 10%',
+	toggleClass:{targets:'nav', className:'nav-active'}
+});
+
 
 $("[data-trigger]").on("click", function(e){
     e.preventDefault();
@@ -78,6 +87,25 @@ $(document).ready(function(){
 });
 
 
+$('.hero-slider').slick({
+	slidesToScroll: 1,
+	arrows: false,
+	dots: true,
+	autoplay:true,
+});
+
+$('.student-placed-slider').slick({
+	slidesToScroll: 1,
+	arrows: false,
+	dots: true,
+	autoplay:true,
+});
+$('.campus-drive-slider').slick({
+	slidesToScroll: 1,
+	arrows: false,
+	dots: true,
+	autoplay:true,
+});
 $('.testimonial-slider').slick({
 
     slidesToScroll: 1,
@@ -100,12 +128,74 @@ $('.testimonial-slider').slick({
 	} );
 
 
+	$('.institute-slider').slick({
 
+        slidesToScroll: 4,
+        arrows: true,
+        dots: false,
+        autoplay:true,
+        infinite: true,
+        prevArrow: '<div class="slick-prev"><i class="fas fa-arrow-left" aria-hidden="true"></i></div>',
+        nextArrow: '<div class="slick-next"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>',
+        responsive: [
+			{
+				breakpoint: 1600,
+				settings: {
+				  slidesToShow: 5,
+				  slidesToScroll: 5,
+				}
+			  },
+			{
+				breakpoint: 1440,
+				settings: {
+				  slidesToShow: 4,
+				  slidesToScroll: 4,
+				}
+			  },
+			  {
+				breakpoint: 1366,
+				settings: {
+				  slidesToShow: 4,
+				  slidesToScroll: 4,
+
+				}
+			  },
+			{
+			  breakpoint: 1024,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+			  }
+			},
+			{
+			  breakpoint: 600,
+			  settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			  }
+			},
+			{
+			  breakpoint: 480,
+			  settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			},
+			{
+				breakpoint: 320,
+				settings: {
+				  slidesToShow: 1,
+				  slidesToScroll: 1
+				}
+			  }
+		  ]
+            
+        });
 
  
     $('.gallery-slider').slick({
 
-        slidesToScroll: 1,
+        slidesToScroll: 5,
         arrows: true,
         dots: false,
         autoplay:true,
@@ -168,20 +258,20 @@ $('.testimonial-slider').slick({
         });
 
         $('.companies-slider').slick({
-
-            slidesToScroll: 1,
-            arrows: true,
+			centerMode: true,
+            slidesToScroll: 6,
+            arrows: false,
             dots: false,
             autoplay:true,
             infinite: true,
-            prevArrow: '<div class="slick-prev arrow-light"><i class="fas fa-arrow-left" aria-hidden="true"></i></div>',
-            nextArrow: '<div class="slick-next arrow-light"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>',
+			rows: 2,
             responsive: [
                 {
                     breakpoint: 1600,
                     settings: {
                       slidesToShow: 6,
                       slidesToScroll: 6,
+					  centerPadding: '60px',
                     }
                   },
                 {
@@ -189,6 +279,7 @@ $('.testimonial-slider').slick({
                     settings: {
                       slidesToShow: 5,
                       slidesToScroll: 5,
+					  centerPadding: '60px',
                     }
                   },
                   {
@@ -196,6 +287,7 @@ $('.testimonial-slider').slick({
                     settings: {
                       slidesToShow: 5,
                       slidesToScroll: 5,
+					  centerPadding: '60px',
     
                     }
                   },
@@ -204,27 +296,32 @@ $('.testimonial-slider').slick({
                   settings: {
                     slidesToShow: 4,
                     slidesToScroll: 4,
+					centerPadding: '40px',
                   }
                 },
                 {
                   breakpoint: 600,
                   settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3
+                    slidesToScroll: 3,
+					centerPadding: '30px',
                   }
                 },
                 {
                   breakpoint: 480,
                   settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 2,
+					centerPadding: '0px',
+
                   }
                 },
                 {
                     breakpoint: 320,
                     settings: {
                       slidesToShow: 1,
-                      slidesToScroll: 1
+                      slidesToScroll: 1,
+					  centerPadding: '0px',
                     }
                   }
               ]
