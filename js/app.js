@@ -258,19 +258,22 @@ $('.testimonial-slider').slick({
         });
 
         $('.companies-slider1').slick({
-			centerMode: true,
             slidesToScroll: 6,
+			speed: 0,
             arrows: false,
             dots: false,
             autoplay:true,
             infinite: true,
+			cssEase: 'linear',
+			draggable:false,
+			autoplaySpeed:5000,
+			pauseOnHover:false,
             responsive: [
                 {
                     breakpoint: 1600,
                     settings: {
                       slidesToShow: 6,
                       slidesToScroll: 6,
-					  centerPadding: '60px',
                     }
                   },
                 {
@@ -278,7 +281,6 @@ $('.testimonial-slider').slick({
                     settings: {
                       slidesToShow: 5,
                       slidesToScroll: 5,
-					  centerPadding: '60px',
                     }
                   },
                   {
@@ -286,7 +288,6 @@ $('.testimonial-slider').slick({
                     settings: {
                       slidesToShow: 5,
                       slidesToScroll: 5,
-					  centerPadding: '60px',
     
                     }
                   },
@@ -295,7 +296,6 @@ $('.testimonial-slider').slick({
                   settings: {
                     slidesToShow: 4,
                     slidesToScroll: 4,
-					centerPadding: '40px',
                   }
                 },
                 {
@@ -303,7 +303,6 @@ $('.testimonial-slider').slick({
                   settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
-					centerPadding: '30px',
                   }
                 },
                 {
@@ -311,7 +310,6 @@ $('.testimonial-slider').slick({
                   settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-					centerPadding: '0px',
 
                   }
                 },
@@ -320,7 +318,6 @@ $('.testimonial-slider').slick({
                     settings: {
                       slidesToShow: 1,
                       slidesToScroll: 1,
-					  centerPadding: '0px',
                     }
                   }
               ]
@@ -328,20 +325,22 @@ $('.testimonial-slider').slick({
             });
 
 			$('.companies-slider2').slick({
-				centerMode: true,
 				slidesToScroll: 6,
+				speed: 0,
 				arrows: false,
 				dots: false,
 				autoplay:true,
 				infinite: true,
-				rtl: true,
+				cssEase: 'linear',
+				draggable:false,
+				autoplaySpeed:5000,
+				pauseOnHover:false,
 				responsive: [
 					{
 						breakpoint: 1600,
 						settings: {
 						  slidesToShow: 6,
 						  slidesToScroll: 6,
-						  centerPadding: '60px',
 						}
 					  },
 					{
@@ -349,7 +348,6 @@ $('.testimonial-slider').slick({
 						settings: {
 						  slidesToShow: 5,
 						  slidesToScroll: 5,
-						  centerPadding: '60px',
 						}
 					  },
 					  {
@@ -357,7 +355,6 @@ $('.testimonial-slider').slick({
 						settings: {
 						  slidesToShow: 5,
 						  slidesToScroll: 5,
-						  centerPadding: '60px',
 		
 						}
 					  },
@@ -366,7 +363,6 @@ $('.testimonial-slider').slick({
 					  settings: {
 						slidesToShow: 4,
 						slidesToScroll: 4,
-						centerPadding: '40px',
 					  }
 					},
 					{
@@ -374,7 +370,6 @@ $('.testimonial-slider').slick({
 					  settings: {
 						slidesToShow: 3,
 						slidesToScroll: 3,
-						centerPadding: '30px',
 					  }
 					},
 					{
@@ -382,7 +377,6 @@ $('.testimonial-slider').slick({
 					  settings: {
 						slidesToShow: 2,
 						slidesToScroll: 2,
-						centerPadding: '0px',
 	
 					  }
 					},
@@ -391,7 +385,6 @@ $('.testimonial-slider').slick({
 						settings: {
 						  slidesToShow: 1,
 						  slidesToScroll: 1,
-						  centerPadding: '0px',
 						}
 					  }
 				  ]
