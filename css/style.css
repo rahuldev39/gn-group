@@ -200,7 +200,7 @@ section.section.hero-section{
     top: 0px;
 }
 nav.navbar {
-    background-color: #2b28736b;
+    background-color: #2b2873f5;
 }
 nav.navbar.nav-active{
     background-color: #2b2873;
@@ -231,9 +231,38 @@ nav.navbar.nav-active{
 .object-fit-cover{
     object-fit: cover;
 }
-
+.hero-slider-item{
+  height: 100vh;
+}
+.slider-bg1{
+    background: url(../images/shapes/yellow-line.png)  no-repeat,
+                url(../images/abstract_white_for-student.png)  no-repeat,
+                url(../images/shapes/dashed.png)  no-repeat;
+   
+   background-position:left 2px bottom -30%, center bottom -70%, center top 120px ;
+}
+.banner-aside {
+    left: 30px;
+}
+.banner-text{
+    padding-left: 12%;
+}
+.banner-text h4::after{
+    width: 60%;
+    height: 2px;
+    background-color: #d6d6d6;
+    content: "";
+    margin-top: 5px;
+    display: block;
+}
+.banner-text h1{
+    font-size: 40px;
+}
 .hero-slider-item img{
     height: 100vh;
+    object-fit: cover;
+    object-position: top left;
+    width: 100%;
 }
 .slick-dots li button:before{
     display: none;
@@ -363,7 +392,6 @@ footer{
     padding-left: 24px;
     display: block;
     font-size: 14px;
-    margin-bottom: 5px;
 }
 .footer-links li a::before {
     content: "";
@@ -612,17 +640,49 @@ footer{
     height: auto;
   }
 
-  
+  .companies-slider{
+      max-width: 850px;
+  }
 
   .companies-slider .slick-slide img{
     object-fit:cover;
     box-shadow:0 0 25px -5px rgba(0,0,0,0.5);
-    transition: all 0.7s ease;
-    transform:rotatey(-90deg);
+    transition: all 500ms ease;
+    transform:rotateX(600deg);
+    transform-style: preserve-3d;
     perspective:7000px;
     opacity:0.8;
   }
   .companies-slider .slick-active img{
-     transform:rotatey(0);
+     transform:rotateX(0);
     opacity:1;
   }
+.company-item img{
+}
+  .helpline span {
+    border: 1px solid #2b2873;
+    padding: 4px 10px 0px 10px;
+    border-radius: 23px;
+    line-height: 19px;
+    font-size: 15px;
+}
+
+.map-container{
+    border-left: 1px solid #2b2873;
+}
+.line-heading::after{
+    content: "";
+    height: 1px;
+    background-color: #211e5e;
+    width: 100%;
+}
+.course-list a{
+    margin-bottom: 8px;
+}
+@media(max-width:992px){
+    .map-container{
+        border-top: 1px solid #2b2873;
+        border-left: none;
+        padding-top: 25px;
+    }
+}

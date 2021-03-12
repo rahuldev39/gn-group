@@ -14,7 +14,7 @@
   <link href="vendor/font-awesome/css/fontawesome.min.css" rel="stylesheet">
   <link href="./vendor/slick/slick.css" rel="stylesheet">
   <link href="./vendor/slick/slick-theme.css" rel="stylesheet">
-
+  <link href="./vendor/flip/flip-carousel.css" rel="stylesheet">
   <link href="./vendor/fullpage/fullpage.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
@@ -33,14 +33,16 @@
 
     <div class="container-fluid">
       <div class="top-nav flex-fill d-lg-flex d-none align-items-center">
+
+        <div class="helpline mr-auto">
+          <span class="font-weight-bold text-primary d-block">Help Line No. : 7411003030</span>
+        </div>
+
         <div class="d-flex justify-content-center ml-auto">
           <a href="#" class="btn btn-primary btn-sm mx-2">
-            Click for E-Brochure
+           View E-Brochure
           </a>
-          <a href="#" class="btn btn-primary btn-sm mx-2">
-            E-Brochure Download
-          </a>
-          <a href="#" class="btn btn-light btn-sm mx-2">
+          <a href="#" class="btn btn-success btn-sm mx-2">
             Apply Now
           </a>
           <a href="#" class="btn btn-primary btn-sm mx-2">
@@ -95,28 +97,30 @@
           <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Our Institution</a>
+          <a class="nav-link" href="#">Courses</a>
         </li>
        
         <li class="nav-item">
-          <a class="nav-link" href="#">Campus Facilities</a>
+          <a class="nav-link" href="#">Placement</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
+          <a class="nav-link" href="#">Academics</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Admission</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Events</a>
+          <a class="nav-link" href="#">Facilites</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Placement</a>
+          <a class="nav-link" href="#">Clubs</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pay Online Fee</a>
+          <a class="nav-link" href="#">Life @ Campus</a>
         </li>
-        
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -126,14 +130,20 @@
     <main id="fullpage">
       <section class="section hero-section position-relative  overflow-hidden">
         <div class="hero-slider   mb-0">
-          <div class="hero-slider-item">
-            <img src="./images/banner.png" class="banner-img  img-fluid  w-100 object-fit-cover" alt="">
-          </div>
-          <div class="hero-slider-item">
-            <img src="./images/banner.png" class="banner-img  img-fluid w-100 object-fit-cover" alt="">
-          </div>
-          <div class="hero-slider-item">
-            <img src="./images/banner.png" class="banner-img  img-fluid   w-100 object-fit-cover" alt="">
+          <div class="hero-slider-item bg-primary slider-bg1">
+            <div class="row h-100 align-items-center">
+              <div class="col-md-6">
+                <div class="banner-text mt-5">
+                  <h4 class="text-white d-inline-block mb-3">Best Education for</h4>
+                  <h1 class="text-secondary font-weight-bold mb-0">ENGINEERING <br>
+                    MANAGEMENT <br>
+                    LAW AND PHARMACY</h1>
+                </div>
+              </div>
+              <div class="col-md-6 position-relative h-100 d-none d-md-block">
+                <img src="./images/banner1-left.png" class="position-absolute  banner-aside"    alt="">
+              </div>
+            </div>
           </div>
         </div>
         
@@ -170,7 +180,7 @@
        </div> -->
       </section>
   
-      <section class="section about-section light-abstract">
+      <section class="section about-section light-abstract" style="background-image: url(./images/about-bg.jpg); background-size: cover;">
         <div class="container py-4">
           <div class="row align-items-center">
             <div class="col-lg-6 mb-5 mb-lg-0">
@@ -310,8 +320,8 @@
         <div class="container pb-lg-3 pb-5">
           <div class="row">
             <div class="col-md-6 text-primary">
-              <h1 class="section-title  bebas mb-2">DISCOVER MORE</h1>
-              <p class=" f-20">A glance at the various specifics</p>
+              <h1 class="section-title  bebas mb-2">Life@gngroup</h1>
+              <p class=" f-20">Explore the campus with us.</p>
             </div>
             <div class="col-md-6">
               <div class="admission-banner text-right">
@@ -322,7 +332,7 @@
                   <span class="bebas text-primary h3 mb-0">FOR THE ADMISSION 2021</span>
                 </div>
                 <div class="contact-btn mt-n2">
-                  <a href="#" class="btn btn-light text-primary bebas f-20 py-1 shadow">Contact Now</a>
+                  <a href="#" class="btn btn-light text-primary bebas f-20 py-1 shadow">Apply Now</a>
                 </div>
                 
               </div>
@@ -380,7 +390,7 @@
   
           <div class="text-center mb-lg-4 mb-5">
             <h1 class="section-title text-primary bebas mb-2">Our Institutions</h1>
-            <p class="text-primary f-20">Top institutions we have created</p>
+            <p class="text-primary f-20">Top educational institutes that makes us proud.</p>
           </div>
           <div class="px-md-5">
             <div class="institute-slider px-4">
@@ -534,13 +544,21 @@
                 <div class="textimonial-items ">
                   <div class="d-flex align-items-center">
                     <div class="testimonial-quote position-relative">
-                      <p class="text-white f-20">Rich with intellectual capital, the learning
-                        experience at GNCT is incredible. The
-                        excellent faculties are an added
-                        advantage to the industry oriented
-                        university curriculum that is well
-                        designed in a global perspective.
-                        I am proud to be a part of this college.</p>
+                      <p class="text-white f-14">I am a student of GNIT COLLEGE OF MANAGEMENT and pursuing
+                        Management Course (PG) and I am highly satisfied with
+                        the amenities being provided by my Institute. All the faculty
+                        members are experts in the subjects and they conduct regular
+                        soft skill development classes for our personal grooming. I am
+                        extremely happy with this institute that it has given me immense
+                        knowledge and all-round development and enhancement
+                        in my personality. They provide enormous opportunities
+                        to achieve our goals. I am thankful to the great organization
+                        for this wonderful experience.</p>
+
+                        <div class="student-info">
+                          <h5 class="bebas text-secondary  mb-0">HITESH AHUJA</h5>
+                          <span class="text-white f-14">Management Course (PG)</span>
+                        </div>
                     </div>
                     <div class="testimonial-thumb ml-4">
                       
@@ -550,35 +568,9 @@
                   
                 </div>
   
-                <div class="textimonial-items ">
-                  <div class="d-flex align-items-center">
-                    <div class="testimonial-quote position-relative">
-                      <p class="text-white f-20">Rich with intellectual capital, the learning
-                        experience at GNCT is incredible.</p>
-                    </div>
-                    <div class="testimonial-thumb ml-4">
-                      
-                      <img src="./images/student_image.png" width="140"   alt="">
-                    </div>
-                  </div>
-                  
-                </div>
+                
   
-                <div class="textimonial-items ">
-                  <div class="d-flex align-items-center">
-                    <div class="testimonial-quote position-relative">
-                      <p class="text-white f-20">
-                        university curriculum that is well
-                        designed in a global perspective.
-                        I am proud to be a part of this college.</p>
-                    </div>
-                    <div class="testimonial-thumb ml-4">
-                      
-                      <img src="./images/student_image.png" width="140"   alt="">
-                    </div>
-                  </div>
-                  
-                </div>
+           
                 
               </div>
               
@@ -590,7 +582,7 @@
       <section class="section py-0">
 
         <div class="row no-gutters h-100">
-          <div class="campus-drive col-xl-6 bg-gray h-100 text-center d-flex align-items-center justify-content-center">
+          <div class="campus-drive col-xl-6  h-100 text-center d-flex align-items-center justify-content-center">
             <div>
               <div class="icon mb-2">
                 <img src="./images/icon/Students_placed.svg" width="65" alt="">
@@ -622,11 +614,11 @@
               </div>
               <h3 class="bebas section-title text-primary mb-4 font-weight-bold">Campus Drive</h3>
               <div class="campus-drive-slider ">
-                <div class="campus-drive-item bg-gray shadow-sm text-center p-4">
+                <div class="campus-drive-item bg-primary shadow-sm text-center p-4">
                   <div class="company mb-5 mt-2" >
                     <img src="./images/company/logos-18.png" class="mx-auto" width="190" alt="">
                   </div>
-                  <h3 class="font-weight-bold text-primary mb-3">IS HIRING</h3>
+                  <h3 class="font-weight-bold text-white mb-3">IS HIRING</h3>
   
                   <div class="bg-white d-flex align-items-center justify-content-center text-primary">
                     <div class="icon mr-3 px-3 py-2">
@@ -643,11 +635,11 @@
                   </div>
                 </div>
   
-                <div class="campus-drive-item bg-gray shadow-sm text-center p-4">
+                <div class="campus-drive-item bg-primary shadow-sm text-center p-4">
                   <div class="company mb-5 mt-2" >
                     <img src="./images/company/logos-18.png" class="mx-auto" width="190" alt="">
                   </div>
-                  <h3 class="font-weight-bold text-primary mb-3">IS HIRING</h3>
+                  <h3 class="font-weight-bold text-white mb-3">IS HIRING</h3>
   
                   <div class="bg-white d-flex align-items-center justify-content-center text-primary">
                     <div class="icon mr-3 px-3 py-2">
@@ -677,13 +669,13 @@
   
           <div class="gallery-slider px-5 mb-5 pt-2">
             <div class="gallery-item px-2"> 
-              <img src="./images/gallery/gallery1.png" class="img-fluid" alt="">
+              <img src="./images/gallery/gallery4.png" class="img-fluid" alt="">
             </div>
             <div class="gallery-item px-2"> 
-              <img src="./images/gallery/gallery2.png" class="img-fluid" alt="">
+              <img src="./images/gallery/gallery5.png" class="img-fluid" alt="">
             </div>
             <div class="gallery-item px-2"> 
-              <img src="./images/gallery/gallery3.png" class="img-fluid" alt="">
+              <img src="./images/gallery/gallery6.png" class="img-fluid" alt="">
             </div>
             <div class="gallery-item px-2"> 
               <img src="./images/gallery/gallery1.png" class="img-fluid" alt="">
@@ -733,10 +725,10 @@
   
       <section class="section hiring-section section-padder bg-primary dark-abstract">
   
-        <div class="">
+        <div class="container">
           <h1 class="section-title text-white bebas mb-5 text-center">COMPANIES HIRING</h1>
   
-          <div class="companies-slider1 companies-slider">
+          <div class="companies-slider1 companies-slider mx-auto">
             <div class="company-item p-3">
               <img src="./images/company/logos-05.png" class="img-fluid" alt="">
             </div>
@@ -787,7 +779,36 @@
             <div class="company-item p-3">
               <img src="./images/company/logos-18.png" class="img-fluid" alt="">
             </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-05.png" class="img-fluid" alt="">
+            </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-06.png" class="img-fluid" alt="">
+            </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-07.png" class="img-fluid" alt="">
+            </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-08.png" class="img-fluid" alt="">
+            </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-09.png" class="img-fluid" alt="">
+            </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-10.png" class="img-fluid" alt="">
+            </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-11.png" class="img-fluid" alt="">
+            </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-11.png" class="img-fluid" alt="">
+            </div>
+            <div class="company-item p-3">
+              <img src="./images/company/logos-12.png" class="img-fluid" alt="">
+            </div>
+
             
+
           </div>
 
           
@@ -800,37 +821,24 @@
       <footer class="section footer-section ">
   
         <div class="container">
-          <div class="row ">
-            <div class="col-md-5 mb-4">
-              <div class="footer-log mb-3">
-                <img src="./images/gn_logo.svg" width="180" alt="">
-              </div>
-              <h5 class="text-primary font-weight-bold mb-2">GN Group of  Institutes</h5>
-              <p class="text-primary">Plot No. 6B, Knowledge Park - II <br>
-                Greater Noida, U.P., INDIA</p>
-                <div class="social-links ">
-                  <a href="#" class="mr-2">
-                    <img src="./images/social/fb.svg" width="20" alt="">
-                  </a>
-                  <a href="#" class="mr-2">
-                    <img src="./images/social/insta.svg" width="20" alt="">
-                  </a>
-                  <a href="#" class="mr-2">
-                    <img src="./images/social/twitter.svg" width="20" alt="">
-                  </a>
-                  <a href="#" class="mr-2">
-                    <img src="./images/social/linkedin.svg" width="20" alt="">
-                  </a>
-                  <a href="#" class="mr-2">
-                    <img src="./images/social/youtube.svg" width="20" alt="">
-                  </a>
+          <div class="row">
+             <div class="col-lg-7">
+              <div class="row ">
+                <div class="col-md-5 mb-4">
+                  <div class="footer-log mb-3">
+                    <img src="./images/gn_logo.svg" width="180" alt="">
+                  </div>
+                  <h5 class="text-primary font-weight-bold mb-2">GN Group of  Institutes</h5>
+                  <p class="text-primary">Plot No. 6B, Knowledge Park - II <br>
+                    Greater Noida, U.P., INDIA
+                    <br>
+                    Help Line No. : 7411003030
+                  </p>
+                   
                 </div>
-            </div>
-            <div class="col-md-5">
-              <h5 class="footer-title font-weight-bold text-primary mb-3">Quick Links</h5>
-
-              <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-5">
+                  <h5 class="footer-title font-weight-bold text-primary mb-3">Quick Links</h5>
+    
                   <ul class="footer-links list-unstyled">
                     <li>
                       <a href="">About Us</a>
@@ -847,13 +855,6 @@
                     <li>
                       <a href="">Contact Us</a>
                     </li>
-                  </ul>
-                  
-                </div>
-
-                <div class="col-md-4">
-                  <ul class="footer-links list-unstyled">
-                    
                     <li>
                       <a href="">Admissions</a>
                     </li>
@@ -866,73 +867,70 @@
                   </ul>
                   
                 </div>
-              </div>
-              
-            </div>
-            <div class="col-md-8">
-              <h5 class="footer-title font-weight-bold text-primary mb-3">Top Courses</h5>
-              <div class="row">
-                <div class="col-md-4">
-                  
-                  <ul class="footer-links list-unstyled">
-                    <li>
-                      <a href="">BBA</a>
-                    </li>
-                    <li>
-                      <a href="">BCA</a>
-                    </li>
-                    <li>
-                      <a href="">B.Com</a>
-                    </li>
-                    <li>
-                      <a href="">B.Sc</a>
-                    </li>
-                    <li>
-                      <a href="">LL.B. 3 Years</a>
-                    </li>
-                    <li>
-                      <a href="">B.A-LL.B. 5 Years</a>
-                    </li>
-                    <li>
-                      <a href="">B.COM-LL.B. 5 Years</a>
-                    </li>
-                    
-                  </ul>
+                <div class="col-md-12">
+                  <h5 class="footer-title font-weight-bold text-primary mb-3 line-heading position-relative d-flex align-items-center text-nowrap pr-md-5">
+                  <span class="mr-2">Top Courses</span>  
+                  </h5>
+                  <div class="row font-weight-bold">
+                    <div class="col-sm-4">
+                      
+                      <ul class="footer-links list-unstyled course-list">
+                        <li>
+                          <a href="">B. Tech</a>
+                        </li>
+                        <li>
+                          <a href="">Diploma</a>
+                        </li>
+                        <li>
+                          <a href="">MBA</a>
+                        </li>
+                        <li>
+                          <a href="">BBA</a>
+                        </li>
+                        <li>
+                          <a href="">BCA</a>
+                        </li>
+                        <li>
+                          <a href="">B.Com</a>
+                        </li>
+                       
+                        
+                      </ul>
+                    </div>
+                    <div class="col-sm-8">
+                      <ul class="footer-links list-unstyled course-list">
+                        <li>
+                          <a href="">LL.B. 3 Years</a>
+                        </li>
+                        <li>
+                          <a href="">B.A-LL.B. 5 Years</a>
+                        </li>
+                        <li>
+                          <a href="">B.COM-LL.B. 5 Years</a>
+                        </li>
+                        <li>
+                          <a href="">B.Pharma</a>
+                        </li>
+                        <li>
+                          <a href="">D.Pharma</a>
+                        </li>
+                      
+                      </ul>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-8">
-                  <ul class="footer-links list-unstyled">
-                    <li>
-                      <a href="">B. Tech. (C.S.E)</a>
-                    </li>
-                    <li>
-                      <a href="">BCA (E.C.E)</a>
-                    </li>
-                    <li>
-                      <a href="">Polytechnic (Civil Engineering)</a>
-                    </li>
-                    <li>
-                      <a href="">Polytechnic (Mechanical Engineering (Automobile)</a>
-                    </li>
-                    <li>
-                      <a href="">Polytechnic (Mechanical Engineering (Production)</a>
-                    </li>
-                    <li>
-                      <a href="">Polytechnic (Electrical Engineering)</a>
-                    </li>
-                    
-                  </ul>
-                </div>
+        
+            
               </div>
-            </div>
-    
-            <div class="col-md-4">
-              <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.6269898860805!2d77.49324561440298!3d28.460658698591228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1de7a50e645%3A0x539df30144bd1ef9!2s6C%2C%20Knowledge%20Park%20II%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201310!5e0!3m2!1sen!2sin!4v1613179892234!5m2!1sen!2sin" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-              </div>
+             </div>
+             <div class="col-lg-5 px-4 map-container">
+                <iframe class="shadow-sm" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.6269898860805!2d77.49324561440298!3d28.460658698591228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1de7a50e645%3A0x539df30144bd1ef9!2s6C%2C%20Knowledge%20Park%20II%2C%20Greater%20Noida%2C%20Uttar%20Pradesh%20201310!5e0!3m2!1sen!2sin!4v1613179892234!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
           </div>
+
+         
     
-          <div class="copy-right-footer text-right py-2">
+          <div class="copy-right-footer text-center py-3">
             <span class="text-primary">© 2021 All Rights Reserved.</span>
           </div>
         </div>
@@ -946,9 +944,12 @@
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="vendor/slick/slick.min.js"></script>
   <script src="vendor/fullpage/fullpage.min.js"></script>
+  <script src="vendor/flip/flip-carousel.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
   <script src="js/app.js"></script>
+
+ 
 
 </body>
 </html>
