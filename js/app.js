@@ -129,8 +129,8 @@ $('.testimonial-slider').slick({
 
 
 	$('.institute-slider').slick({
-
-        slidesToScroll: 4,
+		slidesToShow: 5,
+        slidesToScroll: 5,
         arrows: true,
         dots: false,
         autoplay:true,
@@ -194,7 +194,7 @@ $('.testimonial-slider').slick({
 
  
     $('.gallery-slider').slick({
-
+		slidesToShow: 5,
         slidesToScroll: 5,
         arrows: true,
         dots: false,
@@ -258,6 +258,7 @@ $('.testimonial-slider').slick({
         });
 
         $('.companies-slider1').slick({
+			slidesToShow: 6,
             slidesToScroll: 6,
 			speed: 0,
             arrows: false,
