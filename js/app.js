@@ -258,8 +258,8 @@ $('.testimonial-slider').slick({
         });
 
         $('.companies-slider1').slick({
-			slidesToShow: 6,
-            slidesToScroll: 6,
+			slidesToShow: 4,
+            slidesToScroll: 4,
 			speed: 0,
             arrows: false,
             dots: false,
@@ -274,8 +274,8 @@ $('.testimonial-slider').slick({
                 {
                     breakpoint: 1600,
                     settings: {
-                      slidesToShow: 6,
-                      slidesToScroll: 6,
+                      slidesToShow: 4,
+                      slidesToScroll: 4,
                     }
                   },
                 {
