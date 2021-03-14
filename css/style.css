@@ -118,7 +118,9 @@ body {
 .f-14{
     font-size: 14px !important;
 }
-
+.f-28{
+    font-size: 28px !important;
+}
 .btn{
     border-radius: 0px;
 }
@@ -190,6 +192,10 @@ section.section.hero-section{
     padding: 80px 0px;
 }
 
+.about-graphics.right::before {
+    left: auto;
+    right: 0px;
+}
 .about-graphics::before {
     content: "";
     position: absolute;
@@ -205,10 +211,14 @@ nav.navbar {
 nav.navbar.nav-active{
     background-color: #2b2873;
 }
-.about-bg-circle {
+.about-graphics .about-bg-circle {
     left: 37%;
     height: 95%;
     top: 0;
+}
+.about-graphics.right .about-bg-circle {
+    right: 37%;
+    left: auto;
 }
 .f-18{
     font-size: 18px !important;
@@ -685,4 +695,53 @@ footer{
         border-left: none;
         padding-top: 25px;
     }
+}
+
+
+.page-internal .banner-section{
+    min-height: 350px;
+}
+.highlight-section{
+    background-image: url(../images/btech/highlight-bg.jpg);
+    background-size: cover;
+}
+.eligibility-section{
+    background-image: url(../images/btech/eligibility-bg.jpg);
+    background-size: cover;
+}
+.hightlight-block{
+    background-color: #5f64ad;
+    border-radius: 10px;
+}
+
+.section-header .title{
+    position: relative;
+}
+.section-header .title::after{
+    content: "";
+    width: 100px;
+    display: block;
+    height: 3px;
+    margin-top: 10px;
+}
+.section-header .title.text-primary::after{
+    background-color: #211e5e;
+}
+.section-header .title.text-secondary::after{
+    background-color: white;
+}
+.page-internal .banner-section h1::after{
+    content: "";
+    width: 100px;
+    display: block;
+    height: 3px;
+    margin-top: 5px;
+    background-color: white;
+}
+.page-internal .banner-section h1{
+  font-size: 50px;
+}
+.hidden{
+    opacity: 0;
+    pointer-events: none;
 }

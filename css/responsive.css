@@ -128,6 +128,12 @@
         max-width: 100%;
         flex-basis: 100%;
     }
+    .hightlight-block .icon img {
+        width: 100px;
+    }
+    .hightlight-block .hightlight-text {
+        font-size: 14px;
+    }
 }
 @media(max-width:468px){
     
