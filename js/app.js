@@ -425,3 +425,6 @@ $('.testimonial-slider').slick({
 		
 			$('.leadership-single').slick('slickGoTo', goToSingleSlide);
 		});
+
+
+		
