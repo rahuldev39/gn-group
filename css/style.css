@@ -105,6 +105,10 @@ body {
 .bg-secondary{
     background-color: #ffca05 !important;
 }
+.bg-yellow{
+    background-color: #FBB03B !important;
+
+}
 .text-primary{
     color: #2b2873 !important;
 }
@@ -371,6 +375,7 @@ nav.navbar.nav-active{
         order: -1;
     }
 }
+
 .slick-prev, .slick-next {
     color: #0d1f50 !important;
     height: 40px;
@@ -382,6 +387,10 @@ nav.navbar.nav-active{
     justify-content: center;
     cursor: pointer;
     font-size: 17px;
+}
+.slick-prev.white, .slick-next.white{
+    color: white !important;
+    border: 2px solid white !important;
 }
 .slick-prev::before, .slick-next::before{
     display: none;
@@ -654,11 +663,11 @@ footer{
       max-width: 850px;
   }
 
-  .companies-slider .slick-slide img{
+  /* .companies-slider .slick-slide img{
     object-fit:cover;
     box-shadow:0 0 25px -5px rgba(0,0,0,0.5);
-    transition: all 500ms ease;
-    transform:rotateX(600deg);
+    transition: all 800ms ease .1s;
+    transform:rotateX(180deg);
     transform-style: preserve-3d;
     perspective:7000px;
     opacity:0.8;
@@ -666,7 +675,7 @@ footer{
   .companies-slider .slick-active img{
      transform:rotateX(0);
     opacity:1;
-  }
+  } */
 .company-item img{
 }
   .helpline span {
@@ -744,4 +753,57 @@ footer{
 .hidden{
     opacity: 0;
     pointer-events: none;
+}
+
+.overlay{
+    opacity: .5;
+}
+
+.arrow-list li {
+    background-image: url(../images/icon/double-arrow.svg);
+    background-position: left top 4px;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+.advisory-item .thumb img{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.advisory-item .thumb{
+    position: relative;
+}
+.advisory-item .thumb::after {
+    content: "";
+    height: 100%;
+    width: 6px;
+    background-color: #ffca05;
+    position: absolute;
+    left: 14px;
+    transform: skewX(-20deg);
+}
+.leadership-slider .slick-arrow {
+    border: 0px !important;
+}
+.accordion-toogle-icon .btn-link{
+    position: relative;
+}
+.accordion-toogle-icon .btn-link::after {
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    z-index: 1000;
+    font-size: 13px;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    color: white;
+    position: absolute;
+    right: 22px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.accordion-toogle-icon .btn-link.collapsed::after{
+    content: "\f068";
 }

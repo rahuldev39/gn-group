@@ -65,6 +65,13 @@
     .textimonial-items {
         min-height: 370px;
     }
+    .advisory-item .thumb img {
+        width: 145px;
+    }
+    .advisory-item   h2 {
+        font-size: 26px;
+        margin-bottom: 0px;
+    }
 }
 @media(max-width:768px){
     .slick-next {

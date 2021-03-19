@@ -51,7 +51,10 @@ if($('#fullpage').length > 0){
 	});
 }
 
-gsap.to('.about-bg-circle',{rotation:360, duration: 100, repeat:-1});
+if($('.about-bg-circle').length > 0){
+	gsap.to('.about-bg-circle',{rotation:360, duration: 100, repeat:-1});
+}
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -257,73 +260,168 @@ $('.testimonial-slider').slick({
             
         });
 
-        $('.companies-slider1').slick({
-			slidesToShow: 4,
-            slidesToScroll: 4,
-			speed: 0,
-            arrows: false,
-            dots: false,
-            autoplay:true,
-            infinite: true,
-			cssEase: 'linear',
-			draggable:false,
-			autoplaySpeed:5000,
-			pauseOnHover:false,
-			rows:3,
-            responsive: [
-                {
-                    breakpoint: 1600,
-                    settings: {
-                      slidesToShow: 4,
-                      slidesToScroll: 4,
-                    }
-                  },
-                {
-                    breakpoint: 1440,
-                    settings: {
-                      slidesToShow: 4,
-                      slidesToScroll: 4,
-                    }
-                  },
-                  {
-                    breakpoint: 1366,
-                    settings: {
-                      slidesToShow: 5,
-                      slidesToScroll: 5,
+        // $('.companies-slider1').slick({
+		// 	slidesToShow: 4,
+        //     slidesToScroll: 4,
+		// 	speed: 0,
+        //     arrows: false,
+        //     dots: false,
+        //     autoplay:true,
+        //     infinite: true,
+		// 	cssEase: 'linear',
+		// 	draggable:false,
+		// 	autoplaySpeed:5000,
+		// 	pauseOnHover:false,
+		// 	rows:3,
+        //     responsive: [
+        //         {
+        //             breakpoint: 1600,
+        //             settings: {
+        //               slidesToShow: 4,
+        //               slidesToScroll: 4,
+        //             }
+        //           },
+        //         {
+        //             breakpoint: 1440,
+        //             settings: {
+        //               slidesToShow: 4,
+        //               slidesToScroll: 4,
+        //             }
+        //           },
+        //           {
+        //             breakpoint: 1366,
+        //             settings: {
+        //               slidesToShow: 5,
+        //               slidesToScroll: 5,
     
-                    }
-                  },
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 4,
-                  }
-                },
-                {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                  }
-                },
-                {
-                  breakpoint: 480,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+        //             }
+        //           },
+        //         {
+        //           breakpoint: 1024,
+        //           settings: {
+        //             slidesToShow: 4,
+        //             slidesToScroll: 4,
+        //           }
+        //         },
+        //         {
+        //           breakpoint: 600,
+        //           settings: {
+        //             slidesToShow: 3,
+        //             slidesToScroll: 3,
+        //           }
+        //         },
+        //         {
+        //           breakpoint: 480,
+        //           settings: {
+        //             slidesToShow: 2,
+        //             slidesToScroll: 2,
 
-                  }
-                },
-                {
-                    breakpoint: 320,
-                    settings: {
-                      slidesToShow: 1,
-                      slidesToScroll: 1,
-                    }
-                  }
-              ]
+        //           }
+        //         },
+        //         {
+        //             breakpoint: 320,
+        //             settings: {
+        //               slidesToShow: 1,
+        //               slidesToScroll: 1,
+        //             }
+        //           }
+        //       ]
                 
-            });
+        //     });
 
+
+
+		//----------Leadership slider-------------
+
+		$(document).ready(function(){
+			$('.leadership-single').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				pauseOnFocus:false,
+				pauseOnHover:false,
+				autoplay:false,
+				arrows:false,
+				dots:false,
+				infinite: false,
+				mobileFirst: true,
+				fade:true,
+			});
+		  });
 		
+		  $(document).ready(function(){
+			$('.leadership-slider')
+			.on('init', function(event, slick) {
+				$('.leadership-slider .slick-slide.slick-current').addClass('is-active');
+			})
+			.slick({
+				pauseOnFocus:false,
+				pauseOnHover:false,
+				autoplay:true,
+				arrows:true,
+				dots:false,
+				infinite: true,
+				mobileFirst: true,
+				adaptiveHeight: false,
+				prevArrow: '<div class="slick-prev white"><i class="fas fa-arrow-left" aria-hidden="true"></i></div>',
+				nextArrow: '<div class="slick-next white"><i class="fas fa-arrow-right" aria-hidden="true"></i></div>',
+				responsive: [
+					{
+						breakpoint: 1440,
+						settings: {
+						  slidesToShow: 5,
+						  slidesToScroll: 5,
+						}
+					  },
+					  {
+						breakpoint: 1366,
+						settings: {
+						  slidesToShow: 5,
+						  slidesToScroll: 5,
+						}
+					  },
+					{
+					  breakpoint: 1024,
+					  settings: {
+						slidesToShow: 5,
+						slidesToScroll: 5,
+					  }
+					},
+					{
+					  breakpoint: 600,
+					  settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3
+					  }
+					},
+					{
+					  breakpoint: 480,
+					  settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					  }
+					},
+					{
+						breakpoint: 320,
+						settings: {
+						  slidesToShow: 1,
+						  slidesToScroll: 1
+						}
+					  }
+				  ]
+			});
+		  });
+		
+		
+		  $('.leadership-single').on('afterChange', function(event, slick, currentSlide) {
+			$('.leadership-slider').slick('slickGoTo', currentSlide);
+			var currrentNavSlideElem = '.leadership-slider .slick-slide[data-slick-index="' + currentSlide + '"]';
+			$('.leadership-slider .slick-slide.is-active').removeClass('is-active');
+			$(currrentNavSlideElem).addClass('is-active');
+		});
+		
+		$('.leadership-slider').on('click', '.slick-slide', function(event) {
+			event.preventDefault();
+			var goToSingleSlide = $(this).data('slick-index');
+		
+			$('.leadership-single').slick('slickGoTo', goToSingleSlide);
+		});
