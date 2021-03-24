@@ -112,7 +112,29 @@
     .testimonial-quote p {
         font-size: 14px;
     }
+
+    .solution-item{
+        flex-direction: column;
+    }
+    .solution-icon {
+        margin: 0px !important;
+        order: -1;
+    }
+    .solution-info {
+        padding-top: 25px;
+        text-align: center !important;
+    }
+    .solution-logo {
+        position: static !important;
+    }
+    .solution-info .rect{
+        display: none;
+    }
+    .solution-info-text {
+        padding: 0px !important;
+    }
 }
+
 @media(max-width:576px){
     .about-img img {
         width: 238px;

@@ -1011,3 +1011,83 @@ Section Backgrounds */
 .step-wizard .nav-pills{
     max-width: 800px;
 }
+.solution-item{
+    max-width: 900px;
+    display: flex;
+}
+.solution-icon{
+    padding: 20px;
+    position: relative;
+    z-index: 100;
+    align-self: center;
+    transition: all ease-in-out 300ms;
+}
+.solution-item:hover .solution-icon{
+   transform: scale(1.1);     
+}
+.left .solution-icon{
+   
+}
+.right .solution-icon{
+  
+}
+.solution-info{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.solution-info .rect{
+    height: 100%;
+    width: 200px;
+    border: 15px solid #2b2873;
+    position: absolute;
+    top: 0px;
+    
+}
+.right .solution-info .rect{
+    right: -58px;
+    border-left: 0px !important;
+}
+.left .solution-info .rect {
+    left: -58px;
+    border-right: 0px !important;
+}
+.solution-info .rect::before, 
+.solution-info .rect::after{
+    width: 15px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    background-color: #2b2873;
+    
+}
+.left .solution-info .rect::before, 
+.left .solution-info .rect::after{
+    right: 0;
+}
+.right .solution-info .rect::before, 
+.right .solution-info .rect::after{
+    left: 0;
+}
+.bg-primary .solution-info .rect {
+    border: 15px solid white;
+
+}
+.bg-primary   .solution-info .rect::before, 
+.bg-primary  .solution-info .rect::after{
+    background-color:white
+}
+.solution-info .rect::before{
+    bottom: 0px;
+}
+.solution-info .rect::after{
+    top: 0px;
+}
+.solution-info-text{
+    max-width: 700px;
+}
+.left .solution-info-text {
+    padding-left: 12%;
+}
+.right .solution-info-text {
+    padding-right: 12%;
+}
