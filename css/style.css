@@ -291,7 +291,10 @@ nav.navbar.nav-active{
 .enquire-now-form.out {
     right: -280px;
 }
-
+.form-group label {
+    margin-bottom: 0px;
+    font-size: 14px;
+}
 
 /* About Graphics */
 .about-graphics.right::before {
@@ -831,6 +834,10 @@ Section Backgrounds */
     background-image: url(../images/btech/eligibility-bg.jpg);
     background-size: cover;
 }
+.affiliation-section{
+    background-image: url(../images/admission/affiliation-bg.png);
+    background-size: cover;
+}
 .hightlight-block{
     background-color: #5f64ad;
     border-radius: 10px;
@@ -914,4 +921,93 @@ Section Backgrounds */
     .contact-form {
         max-width: 550px;
     }
+}
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*/
+.nav-pills-custom .nav-link {
+    color: #2b2873;
+    background: #ffca05;
+    position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+    color: #2b2873;
+    background: #ffca05;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+    .nav-pills-custom .nav-link::before {
+        content: '';
+        display: block;
+        border-top: 8px solid transparent;
+        border-left: 10px solid #ffca05;
+        border-bottom: 8px solid transparent;
+        position: absolute;
+        top: 50%;
+        right: -10px;
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+.nav-pills-custom .nav-link.active::before {
+    opacity: 1;
+}
+
+/* Step Wizard */
+
+
+.step-wizard .nav-pills .nav-link.active{
+    background-color: transparent;
+}
+.step-wizard .nav-pills .nav-link{
+    color: white;
+    font-size: 14px;
+    position: relative;
+}
+.step-wizard .nav-pills .nav-link span.step-count {
+    width: 50px;
+    margin: 0 auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    color: #2b2873;
+    font-weight: 800;
+    font-size: 28px;
+    padding-top: 6px;
+    margin-bottom: 15px;
+    border: 6px solid #2b2873;
+    box-shadow: 0px 0px 0px 1px white;
+    position: relative;
+    z-index: 1;
+}
+.step-wizard .nav-pills .nav-link.active span.step-count{
+    background-color: #ffca05;
+    box-shadow: 0px 0px 0px 1px #ffca05;
+}
+
+
+.step-wizard .nav-pills .nav-link:not(:first-child)::before {
+    background: #ffca05;
+    content: "";
+    height: 1px;
+    left: -50%;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.step-wizard .nav-pills{
+    max-width: 800px;
 }
