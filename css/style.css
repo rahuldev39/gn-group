@@ -1094,3 +1094,18 @@ Section Backgrounds */
 .right .solution-info-text {
     padding-right: 12%;
 }
+
+
+.vacancies-section{
+    background-image: url(../images/career/vacancies-bg.png);
+    background-size: cover;
+}
+
+.filter-button:hover{
+    background-color: #ffca05;
+}
+
+.leave-detail-section {
+    background-image: url(../images/career/contact.png);
+    background-size: cover;
+}
