@@ -25,16 +25,16 @@
 <body>
   <header class="position-fixed w-100 page-header">
     <!-- Navigation -->
-  <div class="top-navbar d-flex align-items-center   py-lg-2 position-relative bg-secondary">
+  <div class="top-navbar d-flex align-items-center   py-xl-2 position-relative bg-secondary">
     
-    <div class="mx-lg-auto px-lg-5 ml-3 d-block d-lg-none">
+    <div class="mx-xl-auto px-xl-5 ml-3 d-block d-xl-none">
       <a class="navbar-brand" href="#">
         <img src="./images/gn_logo.svg" width="230" alt="">
       </a>
     </div>
 
     <div class="container-fluid">
-      <div class="top-nav flex-fill d-lg-flex d-none align-items-center">
+      <div class="top-nav flex-fill d-xl-flex d-none align-items-center">
 
         <div class="helpline mr-auto">
           <span class="font-weight-bold text-primary d-block">Help Line No. : 7411003030</span>
@@ -73,55 +73,92 @@
       </div>
     </div>
     
-    <button class="navbar-toggler d-lg-none ml-auto bg-primary align-self-stretch rounded-0" type="button" data-trigger="#navbar_main" >
+    <button class="navbar-toggler d-xl-none ml-auto bg-primary align-self-stretch rounded-0" type="button" data-trigger="#navbar_main" >
       <img src="./images/icon/menu.svg" width="30" alt="">
     </button>
   </div>
 
-  <nav class="navbar navbar-expand-lg mobile-offcanvas navbar-dark  bg-primary  static-top py-0" id="navbar_main">
-    <div class="container-fluid flex-lg-row flex-column align-items-lg-center align-items-stretch">
+  <nav class="navbar navbar-expand-xl mobile-offcanvas navbar-dark  bg-primary  static-top py-0" id="navbar_main">
+    <div class="container-fluid flex-xl-row flex-column align-items-xl-center align-items-stretch">
       <a class="navbar-brand" href="#">
         <img src="./images/gn_logo.svg" width="180" alt="">
       </a>
-      <div class="offcanvas-header d-lg-none d-flex align-items-center mb-4">  
+      <div class="offcanvas-header d-xl-none d-flex align-items-center mb-4">  
         <h5 class="py-2 text-white mb-0">Main Menu</h5>
         <button class="btn btn-link btn-close ml-auto"> 
           <img src="./images/icon/cancel.svg" width="20" alt="">
         </button>
       </div>
-      <ul class="navbar-nav ml-lg-auto">
+      <ul class="navbar-nav ml-xl-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home
+          <a class="nav-link" href="./index.html">Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="./about.html">About</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" >Courses</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> Engineering </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href=""> Diploma in Engineering</a></li>
+                <li><a class="dropdown-item" href="./b.tech.html"> B.Tech.</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#"> Management </a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href="">BBA</a></li>
+                <li><a class="dropdown-item" href="">BCA</a></li>
+                <li><a class="dropdown-item" href="">B.Com.</a></li>
+                <li><a class="dropdown-item" href="">MBA</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#"> LAW</a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href="">B.A. LL.B</a></li>
+                <li><a class="dropdown-item" href="">B.Com LL.B.</a></li>
+                <li><a class="dropdown-item" href="">LL.B.</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#"> Pharmacy</a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href="">D.Pharm.</a></li>
+                <li><a class="dropdown-item" href="">B.Pharm.</a></li>
+              </ul>
+            </li>
+            <li><a class="dropdown-item" href="#">Science</a>
+              <ul class="submenu dropdown-menu">
+                <li><a class="dropdown-item" href="">B.Sc. (Biology)</a></li>
+              </ul>
+            </li>
+          </ul>
         </li>
        
         <li class="nav-item">
-          <a class="nav-link" href="#">Placement</a>
+          <a class="nav-link" href="./placement.html">Placement</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Academics</a>
+          <a class="nav-link" href="./academic.html">Academics</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Admission</a>
+          <a class="nav-link" href="./admission.html">Admission</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Facilites</a>
+          <a class="nav-link" href="./facilities.html">Facilites</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Clubs</a>
+          <a class="nav-link" href="./clubs.html">Clubs</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Life @ Campus</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="./career.html">Career</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contact.html">Contact</a>
         </li>
       </ul>
     </div>

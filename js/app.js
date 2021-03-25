@@ -260,74 +260,74 @@ $('.testimonial-slider').slick({
             
         });
 
-        // $('.companies-slider1').slick({
-		// 	slidesToShow: 4,
-        //     slidesToScroll: 4,
-		// 	speed: 0,
-        //     arrows: false,
-        //     dots: false,
-        //     autoplay:true,
-        //     infinite: true,
-		// 	cssEase: 'linear',
-		// 	draggable:false,
-		// 	autoplaySpeed:5000,
-		// 	pauseOnHover:false,
-		// 	rows:3,
-        //     responsive: [
-        //         {
-        //             breakpoint: 1600,
-        //             settings: {
-        //               slidesToShow: 4,
-        //               slidesToScroll: 4,
-        //             }
-        //           },
-        //         {
-        //             breakpoint: 1440,
-        //             settings: {
-        //               slidesToShow: 4,
-        //               slidesToScroll: 4,
-        //             }
-        //           },
-        //           {
-        //             breakpoint: 1366,
-        //             settings: {
-        //               slidesToShow: 5,
-        //               slidesToScroll: 5,
+        $('.companies-slider1').slick({
+			slidesToShow: 4,
+            slidesToScroll: 4,
+			speed: 0,
+            arrows: false,
+            dots: false,
+            autoplay:true,
+            infinite: true,
+			cssEase: 'linear',
+			draggable:false,
+			autoplaySpeed:5000,
+			pauseOnHover:false,
+			rows:3,
+            responsive: [
+                {
+                    breakpoint: 1600,
+                    settings: {
+                      slidesToShow: 4,
+                      slidesToScroll: 4,
+                    }
+                  },
+                {
+                    breakpoint: 1440,
+                    settings: {
+                      slidesToShow: 4,
+                      slidesToScroll: 4,
+                    }
+                  },
+                  {
+                    breakpoint: 1366,
+                    settings: {
+                      slidesToShow: 5,
+                      slidesToScroll: 5,
     
-        //             }
-        //           },
-        //         {
-        //           breakpoint: 1024,
-        //           settings: {
-        //             slidesToShow: 4,
-        //             slidesToScroll: 4,
-        //           }
-        //         },
-        //         {
-        //           breakpoint: 600,
-        //           settings: {
-        //             slidesToShow: 3,
-        //             slidesToScroll: 3,
-        //           }
-        //         },
-        //         {
-        //           breakpoint: 480,
-        //           settings: {
-        //             slidesToShow: 2,
-        //             slidesToScroll: 2,
+                    }
+                  },
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
 
-        //           }
-        //         },
-        //         {
-        //             breakpoint: 320,
-        //             settings: {
-        //               slidesToShow: 1,
-        //               slidesToScroll: 1,
-        //             }
-        //           }
-        //       ]
+                  }
+                },
+                {
+                    breakpoint: 320,
+                    settings: {
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                    }
+                  }
+              ]
                 
-        //     });
+            });
 
 
 
@@ -458,3 +458,21 @@ $('.testimonial-slider').slick({
 
 		});
 		
+
+
+		$(document).on('click', '.dropdown-menu', function (e) {
+			e.stopPropagation();
+		  });
+		  
+		  // make it as accordion for smaller screens
+		  if ($(window).width() < 1200) {
+			$('.dropdown-menu a').click(function(e){
+			  e.preventDefault();
+				if($(this).next('.submenu').length){
+				  $(this).next('.submenu').toggle();
+				}
+				$('.dropdown').on('hide.bs.dropdown', function () {
+			   $(this).find('.submenu').hide();
+			})
+			});
+		  }

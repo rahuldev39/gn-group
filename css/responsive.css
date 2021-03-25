@@ -1,3 +1,30 @@
+@media(max-width:1200px){
+    nav.navbar {
+        background-color: #2b2873;
+    }
+    .navbar-brand img{
+        width: 180px;
+    }
+    .page-internal {
+        padding-top: 60px;
+    }
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+        background-color: #ffca05;
+        font-size: 14px;
+    }
+    .dropdown-item {
+        padding: 4px 16px;
+        color: #2b2873;
+        border: 0;
+    }
+    .dropdown-item:focus, .dropdown-item:hover {
+        color: #16181b;
+        text-decoration: none;
+        background-color: #fafaf978;
+    }
+}
 @media(max-width:1024px){
     .fp-section.fp-table, .fp-slide.fp-table, .fp-tableCell{
         height: auto !important;
@@ -27,12 +54,8 @@
     }
 }
 @media(max-width:992px){
-    nav.navbar {
-        background-color: #2b2873;
-    }
-    .page-internal {
-        padding-top: 60px;
-    }
+    
+    
         
     .section-heading h1 {
         font-size: 2.5rem;
@@ -43,9 +66,6 @@
     }
     .img-right-lg{
         order: -1;
-    }
-    .navbar-brand img{
-        width: 180px;
     }
     
     .enquire-now-form {
