@@ -131,7 +131,7 @@ $('.testimonial-slider').slick({
 	} );
 
 
-	$('.institute-slider').slick({
+	$('.institute-slider, .event-slider').slick({
 		slidesToShow: 5,
         slidesToScroll: 5,
         arrows: true,
