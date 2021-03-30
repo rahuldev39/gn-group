@@ -281,7 +281,7 @@ nav.navbar.nav-active{
         font-weight: 600;
         border-bottom: 1px solid #2b28731c;
     }
-    .dropdown-menu li:last-child .dropdown-item{
+    .dropdown-menu li:last-child > .dropdown-item{
         border-bottom: none;
     }
     .dropdown-item:focus, .dropdown-item:hover {
