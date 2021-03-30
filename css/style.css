@@ -168,7 +168,14 @@ body {
     min-width: 150px;
 }
 
-
+.btn-know-more {
+    border: 1px solid #2b2873;
+    color: #2b2873;
+}
+.btn-know-more:hover {
+    background-color: #FBB03B;
+    border-color: #fbb03b;
+}
 
 /* Navigation Header */
 .navbar,.top-navbar  {
@@ -631,7 +638,8 @@ section.section.hero-section{
     cursor: pointer;
     font-size: 17px;
 }
-.slick-prev.white, .slick-next.white{
+.slick-prev.white, .slick-next.white, 
+.bg-primary .event-slider .slick-prev, .bg-primary .event-slider .slick-next{
     color: white !important;
     border: 2px solid white !important;
 }
@@ -1215,3 +1223,43 @@ Section Backgrounds */
     margin-left: 5px;
     margin-right: 5px;
 }
+
+.pagination .page-item {
+    margin-right: 14px;
+}
+
+.pagination .page-item .page-link {
+    border: 1px solid #2b2873;
+    color: #2b2873;
+    border-radius: 6px;
+}
+
+@media(min-width:768px){
+    .latest-news-block ul {
+        height: 600px !important;
+        position: relative;
+    }
+}
+.list-group-item{
+    border: 0px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.list-group-item:last-child{
+    border-bottom: 0px;
+}
+.list-group{
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+
+
+.slick-slide .company-item img{
+    transition: all 0.7s ease;
+    transform:rotateX(-180deg);
+    perspective:7000px;
+    opacity:0;
+  }
+  .slick-active .company-item img{
+     transform:rotatey(0);
+    opacity:1;
+  }
