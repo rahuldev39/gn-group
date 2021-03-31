@@ -1281,3 +1281,47 @@ Section Backgrounds */
     transform: translateY(-50%);
     right: 14px;
 }
+
+.table {
+
+}
+.table-bordered td {
+    border: 1px solid #ffca05;
+}
+.table thead th {
+    background-color: #ffca05;
+    font-size: 13px;
+}
+
+.table tbody td {
+    font-size: 13px;
+}
+
+.tab-heading.section-heading h1 {
+    font-size: 2.7rem;
+}
+
+.course-tab .nav-item .nav-link {
+    color: #202020;
+    font-size: 14px;
+    padding: .75rem 1.25rem;
+}
+.course-tab .nav-item .nav-link.active {
+    color: #ffca05;
+    position: relative;
+}
+.course-tab .nav-item .nav-link.active::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    background-color: #ffca05;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.course-tab-content{
+    position: sticky;
+    top: 150px;
+}
