@@ -1,14 +1,44 @@
 /* Fonts Familiy */
 @font-face {
     font-family: 'Campton';
-    src: url('../fonts/campton/Campton-Light.otf') format('opentype');
-    font-weight: 400;
+    src: url('../fonts/campton/CAMPTONTHIN.OTF') format('opentype');
+    font-weight: 100;
  }
  @font-face {
    font-family: 'Campton';
-   src: url('../fonts/campton/Campton-Bold.otf') format('opentype');
-   font-weight: bold;
+   src: url('../fonts/campton/CAMPTONEXTRALIGHT.OTF') format('opentype');
+   font-weight: 200;
 }
+@font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/CAMPTONLIGHT.OTF') format('opentype');
+    font-weight: 300;
+ }
+ @font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/CAMPTONBOOK.OTF') format('opentype');
+    font-weight: 400;
+ }
+ @font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/CAMPTONMEDIUM.OTF') format('opentype');
+    font-weight: 500;
+ }
+ @font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/CAMPTONSEMIBOLD.OTF') format('opentype');
+    font-weight: 600;
+ }
+ @font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/CAMPTONEXTRABOLD.OTF') format('opentype');
+    font-weight: 700;
+ }
+ @font-face {
+    font-family: 'Campton';
+    src: url('../fonts/campton/CAMPTONBLACK.OTF') format('opentype');
+    font-weight: 800;
+ }
 @font-face {
     font-family: 'Bebas';
     src: url('../fonts/bebas/BEBAS-REGULAR.TTF') format('opentype');
@@ -19,12 +49,20 @@
 .bebas{
     font-family: 'Bebas';
 }
-
+.raleway{
+    font-family: 'Raleway', sans-serif;
+}
+.poppins
+{
+    font-family: 'Poppins', sans-serif;
+}
 body {
     font-family: 'Campton';
     overflow-x: hidden !important;
 }
-
+p{
+    text-align: justify;
+}
 
 /* Colors */
 .bg-primary{
@@ -36,6 +74,9 @@ body {
 .bg-yellow{
     background-color: #FBB03B !important;
 
+}
+.text-dark{
+    color: #000 !important;
 }
 .text-primary{
     color: #2b2873 !important;
@@ -75,6 +116,10 @@ body {
 }
 .f-28{
     font-size: 28px !important;
+}
+
+.font-semibold{
+    font-weight: 600;
 }
 
 /* Utility */
@@ -157,7 +202,9 @@ body {
     font-size: 14px;
     font-weight: 600;
 }
-
+.btn-rounded{
+    border-radius: 30px;
+}
  a.bg-primary:focus, 
  a.bg-primary:hover, 
  button.bg-primary:focus, 
@@ -416,40 +463,28 @@ section.section.hero-section{
     width: 100%;
 }
 .hero-slider-item{
-  height: 100vh;
+  height:calc(100vh - 108px) ;
+  margin-top: 108px;
 }
-.slider-bg1{
-    background: url(../images/shapes/yellow-line.png)  no-repeat,
-                url(../images/abstract_white_for-student.png)  no-repeat,
-                url(../images/shapes/dashed.png)  no-repeat;
-   
-   background-position:left 2px bottom -30%, center bottom -70%, center top 120px ;
-}
+
 
 .banner-aside {
-    left: 30px;
+    right: 0px;
 }
-.banner-text{
+.banner-text {
     padding-left: 12%;
-}
-.banner-text h4::after{
-    width: 60%;
-    height: 2px;
-    background-color: #d6d6d6;
-    content: "";
-    margin-top: 5px;
-    display: block;
-}
-.banner-text h1{
-    font-size: 40px;
-}
-.hero-slider-item img{
-    height: 100vh;
-    object-fit: cover;
-    object-position: top left;
-    width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
+
+.hero-slider-item img{
+    height: 100%;
+}
+.banner-text h2 {
+    font-size: 3.4rem;
+    font-weight: 900;
+}
 
 /* Page internal Banner, heading  */
 .page-internal .banner-section{
@@ -560,14 +595,14 @@ section.section.hero-section{
     top: 0px;
 }
 .testimonial-quote{
-    padding-bottom: 78px;
-    padding-top: 78px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .testimonial-quote::before, .testimonial-quote::after {
     content: "";
     position: absolute;
-    height: 70px;
-    width: 70px;
+    height: 45px;
+    width: 45px;
     background-image: url(../images/icon/quote.svg);
     display: block;
     background-repeat: no-repeat;
@@ -584,7 +619,7 @@ section.section.hero-section{
     right: 0px;
 }
 .textimonial-items {
-    min-height: 350px;
+    min-height: 100vh;
     display: flex !important;
     align-items: center;
 }
@@ -1325,3 +1360,20 @@ Section Backgrounds */
     position: sticky;
     top: 150px;
 }
+.newsticker-wrapper{
+    height:250px;
+}
+  .newsticker-wrapper .mask {
+    position: relative;
+    left: 0px;
+    top: 10px;
+    height:250px;
+    overflow: hidden;
+  }
+  .newsticker-wrapper ul {
+    position: relative;
+  }
+  .events li{
+      border-bottom: 1px dotted #2b2873;
+    padding-bottom: 7px;
+  }

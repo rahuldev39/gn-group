@@ -476,3 +476,16 @@ $('.testimonial-slider').slick({
 			})
 			});
 		  }
+
+
+
+		  
+  //----------Marquee slider-------------
+
+  $(function(){
+    $(".newsticker").liScroll();
+});
+
+$(function(){
+    $(".eventticker").liScroll();
+});
