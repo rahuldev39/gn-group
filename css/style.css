@@ -1285,8 +1285,12 @@ Section Backgrounds */
 .list-group{
     border: 1px solid rgba(0,0,0,.125);
 }
-
-
+.list-group-secondary.list-group{
+    border-color: #ffca05;
+}
+.list-group-secondary.list-group .list-group-item{
+    border-color: #ffca05;
+}
 
 .slick-slide .company-item img{
     transition: all 0.7s ease;
