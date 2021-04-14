@@ -508,8 +508,9 @@ section.section.hero-section{
     margin-top: 5px;
     background-color: white;
 }
-.page-internal .banner-section h1{
-  font-size: 50px;
+.page-internal .banner-section h1 {
+    font-size: 50px;
+    text-transform: uppercase;
 }
 .overlay{
     opacity: .8
