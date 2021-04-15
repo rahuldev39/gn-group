@@ -43,6 +43,9 @@
     font-family: 'Bebas';
     src: url('../fonts/bebas/BEBAS-REGULAR.TTF') format('opentype');
  }
+ html{
+     scroll-behavior: smooth;
+ }
  .campton{
     font-family: 'Campton'; 
 }
@@ -59,6 +62,7 @@
 body {
     font-family: 'Campton';
     overflow-x: hidden !important;
+    position: relative;
 }
 p{
     text-align: justify;
@@ -559,7 +563,9 @@ section.section.hero-section{
 }
 
 
-
+.student-placed{
+    background-color: #e8e8fa;
+}
 
 
 /* Testimonial */
@@ -1347,6 +1353,7 @@ Section Backgrounds */
     color: #202020;
     font-size: 14px;
     padding: .75rem 1.25rem;
+    text-transform: uppercase;
 }
 .course-tab .nav-item .nav-link.active {
     color: #ffca05;

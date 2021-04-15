@@ -489,3 +489,5 @@ $('.testimonial-slider').slick({
 $(function(){
     $(".eventticker").liScroll();
 });
+
+
