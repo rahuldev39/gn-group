@@ -482,12 +482,20 @@ $('.testimonial-slider').slick({
 		  
   //----------Marquee slider-------------
 
-  $(function(){
-    $(".newsticker").liScroll();
-});
-
-$(function(){
-    $(".eventticker").liScroll();
-});
 
 
+
+
+
+$(".marquee").kxbdMarquee({
+
+	//"left", "right", "up", "down"
+	direction: "up",
+	loop: 0,
+	// step size
+	scrollAmount:1,
+
+	// animation delay
+	scrollDelay:30
+  
+  });
