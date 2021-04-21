@@ -1453,3 +1453,7 @@ Section Backgrounds */
     background: linear-gradient(90deg, rgba(25, 29, 89, 0.83) 18.53%, rgba(25, 29, 89, 0) 67.27%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+
+.team-mamber-container{
+    max-width: 950px;
+}
