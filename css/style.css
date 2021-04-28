@@ -377,8 +377,8 @@ nav.navbar.nav-active{
     transition: all ease-out 300ms;
 }
 .toggle-btn {
-    top: 15%;
-    right: calc(100% + 42px);
+    top: 42%;
+    right: 42px;
     line-height: 20px;
     font-weight: 600;
     background: url(../images/ic_form.png) no-repeat 24px center;
