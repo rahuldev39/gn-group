@@ -250,7 +250,7 @@ p{
     color: #ffca05 ;
 }
 nav.navbar {
-    background-color: #2b2873f5;
+    background-color: #3d398bf5 !important;
 }
 nav.navbar.nav-active{
     background-color: #2b2873;

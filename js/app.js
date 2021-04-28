@@ -81,13 +81,13 @@ $(".btn-close, .screen-overlay").click(function(e){
 }); 
 
 // Form Toggle
-$(document).ready(function(){
-    $('.toggle-btn').on('click', function(){
+// $(document).ready(function(){
+//     $('.toggle-btn').on('click', function(){
 
-        $('.enquire-now-form').toggleClass('out')
+//         $('.enquire-now-form').toggleClass('out')
 
-    });
-});
+//     });
+// });
 
 
 $('.hero-slider').slick({

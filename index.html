@@ -296,10 +296,10 @@
         
   
         <div class="enquire-now-form bg-white p-4  shadow  position-absolute out">
-          <button class="btn toggle-btn p-0 position-absolute bebas">
+          <button class="btn toggle-btn p-0 position-absolute bebas" data-toggle="modal" data-target="#enquire-now-modal">
             Enquire Now
           </button>
-          <h4 class=" mb-1 bebas">Enquire Now</h4>
+          <!-- <h4 class=" mb-1 bebas">Enquire Now</h4>
           
            <div class="form-group mb-2">
              <input class="form-control" type="text" placeholder="Name">
@@ -323,7 +323,7 @@
            </div> 
            <div class="text-right">
              <button class="btn btn-primary">SUBMIT</button>
-           </div>
+           </div> -->
        </div>
       </section>
   
@@ -353,7 +353,7 @@
                 Management, Engineering and Law programs worldwide.</p>
             
               <a href="./about.html" type="button" class="btn btn-outline-primary">Read More</a>
-              <a href="#" type="button" class="btn btn-primary">Courses</a>
+              
             </div>
           </div>
         </div>
@@ -447,7 +447,7 @@
         <div class="container pb-lg-3 pb-5">
           <div class="row">
             <div class="col-md-6 text-primary">
-              <h1 class="section-title  bebas mb-2">Life@gngroup</h1>
+              <h1 class="section-title  bebas mb-2">Explore gngroup</h1>
               <p class=" f-20">Explore the campus with us.</p>
             </div>
             <div class="col-md-6">
@@ -469,22 +469,22 @@
   
         <div class="row no-gutters mt-auto">
           <div class="col-md-4">
-            <a href="#" class="discover-thumb-item position-relative d-block overflow-hidden">
+            <a href="./academic.html" class="discover-thumb-item position-relative d-block overflow-hidden">
               <img src="./images/discover-thumb1.png" height="190" class="w-100 object-fit-cover side-img" alt="">
               <div class="caption position-absolute">
                 <span class="text-white bebas h4 mb-0">ACADEMICS</span>
               </div>
             </a>
   
-            <a href="#" class="discover-thumb-item position-relative d-block overflow-hidden">
+            <a href="./placement.html" class="discover-thumb-item position-relative d-block overflow-hidden">
               <img src="./images/discover-thumb2.png" height="190" class="w-100 object-fit-cover side-img" alt="">
               <div class="caption position-absolute">
-                <span class="text-white bebas h4 mb-0">COURSES</span>
+                <span class="text-white bebas h4 mb-0">Placement</span>
               </div>
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#" class="discover-thumb-item position-relative d-block overflow-hidden">
+            <a href="./admission.html" class="discover-thumb-item position-relative d-block overflow-hidden">
               <img src="./images/discover-thumb3.png" height="380" class="w-100 object-fit-cover center-img" alt="">
               <div class="caption position-absolute">
                 <span class="text-white bebas h4 mb-0">ADMISSION</span>
@@ -492,14 +492,14 @@
             </a>
           </div>
           <div class="col-md-4">
-            <a href="#" class="discover-thumb-item position-relative d-block overflow-hidden">
+            <a href="./campus-life.html" class="discover-thumb-item position-relative d-block overflow-hidden">
               <img src="./images/discover-thumb4.png" height="190" class="w-100 object-fit-cover side-img" alt="">
               <div class="caption position-absolute">
                 <span class="text-white bebas h4 mb-0">EVENTS</span>
               </div>
             </a>
   
-            <a href="#" class="discover-thumb-item position-relative d-block overflow-hidden">
+            <a href="./facilities.html" class="discover-thumb-item position-relative d-block overflow-hidden">
               <img src="./images/discover-thumb5.png" height="190" class="w-100 object-fit-cover side-img" alt="">
               <div class="caption position-absolute">
                 <span class="text-white bebas h4 mb-0">CAMPUS FACILITIES</span>
@@ -1044,6 +1044,28 @@
       </footer>
   
     </main>
+
+
+    <!-- Modal -->
+<div class="modal fade enquire-now-modal" id="enquire-now-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Enquire Now</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
    
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
