@@ -1,3 +1,30 @@
+//--------------Navigation dropdown on Hover---------------
+
+$(document).ready(function() {
+    function toggleNavbarMethod() {
+        if ($(window).width() > 992) {
+            $('.navbar .dropdown').on('mouseover', function(){
+                $(this).find('.dropdown-menu').addClass('show');
+				console.log('hiiiiiiiiiiiiii');
+            }).on('mouseout', function(){
+				$(this).find('.dropdown-menu').removeClass('show');
+			});
+
+			$('.dropdown-toggle').click(
+				function(){
+				  if ($(this).next().is(':visible')) {
+					location.href = $(this).attr('href');;
+				  }
+				 });
+        }
+        else {
+            $('.navbar .dropdown').off('mouseover').off('mouseout');
+        }
+    }
+    toggleNavbarMethod();
+    $(window).resize(toggleNavbarMethod);
+});
+
 //---------Fill Page Scroll---------------
 if($('#fullpage').length > 0){
 	var myFullpage = new fullpage('#fullpage', {
@@ -499,3 +526,5 @@ $(".marquee").kxbdMarquee({
 	scrollDelay:30
   
   });
+
+  
