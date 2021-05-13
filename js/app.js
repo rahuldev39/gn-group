@@ -5,7 +5,6 @@ $(document).ready(function() {
         if ($(window).width() > 992) {
             $('.navbar .dropdown').on('mouseover', function(){
                 $(this).find('.dropdown-menu').addClass('show');
-				console.log('hiiiiiiiiiiiiii');
             }).on('mouseout', function(){
 				$(this).find('.dropdown-menu').removeClass('show');
 			});
@@ -487,14 +486,16 @@ $('.testimonial-slider').slick({
 		
 
 
+		
+
 		$(document).on('click', '.dropdown-menu', function (e) {
 			e.stopPropagation();
 		  });
 		  
 		  // make it as accordion for smaller screens
 		  if ($(window).width() < 1200) {
-			$('.dropdown-menu a').click(function(e){
-			  e.preventDefault();
+			$('.dropdown-menu a.has-submenu').click(function(e){
+			  	e.preventDefault();
 				if($(this).next('.submenu').length){
 				  $(this).next('.submenu').toggle();
 				}
