@@ -119,9 +119,12 @@ $(".btn-close, .screen-overlay").click(function(e){
 $('.hero-slider').slick({
 	slidesToScroll: 1,
 	arrows: false,
+	lazyLoad: 'progressive',
 	dots: true,
 	autoplay:true,
-});
+}).slickAnimation();
+
+
 
 $('.student-placed-slider').slick({
 	slidesToScroll: 1,
