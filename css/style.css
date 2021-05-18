@@ -513,7 +513,9 @@ section.section.hero-section{
     transition: opacity 0.5s ease 0.3s;
     transition: 1s;
 }
-
+.text-pink {
+    color: #d51171;
+}
 
 /* Page internal Banner, heading  */
 .page-internal .banner-section{
