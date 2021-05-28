@@ -1487,3 +1487,32 @@ Section Backgrounds */
 #video-banner{
     max-width: 950px;
 }
+.post .card-title {
+    color: #2b2873;
+}
+
+.tag-list a {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 3px 13px;
+    color: #1c294b;
+    margin: 3px 0px;
+    margin-right: 6px;
+    border-radius: 4px;
+    border: 1px solid #81848a69;
+    font-size: .87rem;
+}
+
+.mb-6 {
+    margin-bottom: 4rem !important;
+}
+.comment-list .reply-btn a {
+    font-size: 0.86rem;
+}
+
+.popular-posts__list li {
+    border-bottom: 1px solid #ececec;
+}
+.popular-posts__list li a span {
+    font-size: 14px;
+}
