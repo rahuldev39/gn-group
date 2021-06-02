@@ -115,14 +115,16 @@ $(".btn-close, .screen-overlay").click(function(e){
 //     });
 // });
 
+if($('.hero-slider').length){
+	$('.hero-slider').slick({
+		slidesToScroll: 1,
+		arrows: false,
+		lazyLoad: 'progressive',
+		dots: true,
+		autoplay:true,
+	}).slickAnimation();
+}
 
-$('.hero-slider').slick({
-	slidesToScroll: 1,
-	arrows: false,
-	lazyLoad: 'progressive',
-	dots: true,
-	autoplay:true,
-}).slickAnimation();
 
 
 
